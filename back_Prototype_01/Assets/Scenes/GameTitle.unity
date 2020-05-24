@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 435779906}
   - component: {fileID: 435779905}
   - component: {fileID: 435779904}
+  - component: {fileID: 435779907}
   m_Layer: 5
   m_Name: Button_GameContinue
   m_TagString: Untagged
@@ -460,7 +461,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 435779905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 435779907}
+        m_MethodName: NextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &435779905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +509,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435779902}
   m_CullTransparentMesh: 0
+--- !u!114 &435779907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435779902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71a81b9a8e7e374399bf214828e626e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Game
 --- !u!1 &448594495
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +634,6 @@ GameObject:
   - component: {fileID: 1151801096}
   - component: {fileID: 1151801095}
   - component: {fileID: 1151801094}
-  - component: {fileID: 1151801097}
   m_Layer: 5
   m_Name: Button_NewGame
   m_TagString: Untagged
@@ -679,8 +703,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1151801097}
-        m_MethodName: NextScene
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -726,19 +750,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151801092}
   m_CullTransparentMesh: 0
---- !u!114 &1151801097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151801092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a71a81b9a8e7e374399bf214828e626e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneName: Game
 --- !u!1 &1468282426
 GameObject:
   m_ObjectHideFlags: 0
