@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LittleRedRidingHoodSetting : MonoBehaviour
 {
+    #region 基礎欄位與屬性
+
     /// <summary>
     /// 小紅帽的生命值
     /// </summary>
@@ -46,16 +48,89 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     [Range(1, 3)]
     public byte runAccelerate;
 
-    void Start()
+    /// <summary>
+    /// 小紅帽的旋轉角度
+    /// </summary>
+    public Vector3 angle;
+
+    //private Animator LR_ani;
+
+    /// <summary>
+    /// 小紅帽的角色本體
+    /// </summary>
+    private Rigidbody LR_rigibogy;
+
+    /// <summary>
+    /// 是否在森林地面上方
+    /// </summary>
+    private bool isGround
     {
-        print("哈囉,我是小紅帽,大野狼不要欺負我喔!");
+        get
+        {
+            if (transform.position.y < 0.051f) return true;
+            else return false;
+        }
     }
 
-   
-   void Update()
+
+    #endregion 基礎欄位與屬性 結束
+
+
+
+
+    #region 方法
+
+    private void Move() //移動功能
     {
-        /*if(Input.GetKeyDown(KeyCode.W)) {
-        
-        }*/
+
+        #region 角色移動
+        float v = Input.GetAxis("Vertical"); // 前後移動
+
+        float h = Input.GetAxis("Horizontal"); // 左右移動
+
+        // 前後推進
+        LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
+
+        // 左右移動
+        LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
+
+        #endregion 角色移動 結束
+
+        #region 角色轉向
+        if (v == 1) angle = new Vector3(0, 0, 0);
+        else if (v == -1) angle = new Vector3(0, 180, 0);
+        else if (h == 1) angle = new Vector3(0, 90, 0);
+        else if (h == -1) angle = new Vector3(0, 270, 0);
+
+        transform.eulerAngles = angle;
+        #endregion 角色轉向 結束
+
+    } // 移動功能 結束
+
+
+
+    #endregion 方法結束
+
+
+
+    #region 事件
+
+    void Start()
+    {
+        LR_rigibogy = GetComponent<Rigidbody>();
+        // print("哈囉,我是小紅帽,大野狼不要欺負我喔!");
     }
+
+
+    void FixedUpdate()
+    {
+        Move();
+    }
+
+    private void Update()
+    {
+        
+    }
+
+    #endregion 事件 結束
 }

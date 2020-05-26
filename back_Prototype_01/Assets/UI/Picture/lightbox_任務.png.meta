@@ -1,0 +1,3596 @@
+fileFormatVersion: 2
+guid: 5f21f73bdfa41154586a26917b94ed8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5884391302607453358
+    second: "lightbox_\u4EFB\u52D9_0"
+  - first:
+      213: 6738656479705580776
+    second: "lightbox_\u4EFB\u52D9_1"
+  - first:
+      213: -6329549618961399775
+    second: "lightbox_\u4EFB\u52D9_2"
+  - first:
+      213: 4727331568700614886
+    second: "lightbox_\u4EFB\u52D9_3"
+  - first:
+      213: 4511104227660409701
+    second: "lightbox_\u4EFB\u52D9_4"
+  - first:
+      213: -1321491472122657881
+    second: "lightbox_\u4EFB\u52D9_5"
+  - first:
+      213: -7399139889454789957
+    second: "lightbox_\u4EFB\u52D9_6"
+  - first:
+      213: -4916066789045411963
+    second: "lightbox_\u4EFB\u52D9_7"
+  - first:
+      213: 1551454152878499155
+    second: "lightbox_\u4EFB\u52D9_8"
+  - first:
+      213: 3032787149910783907
+    second: "lightbox_\u4EFB\u52D9_9"
+  - first:
+      213: -7861978450346713964
+    second: "lightbox_\u4EFB\u52D9_10"
+  - first:
+      213: -1310822044266994772
+    second: "lightbox_\u4EFB\u52D9_11"
+  - first:
+      213: -2815708209240097654
+    second: "lightbox_\u4EFB\u52D9_12"
+  - first:
+      213: -4931185477585981113
+    second: "lightbox_\u4EFB\u52D9_13"
+  - first:
+      213: 6693022026945394560
+    second: "lightbox_\u4EFB\u52D9_14"
+  - first:
+      213: 6416421549798628910
+    second: "lightbox_\u4EFB\u52D9_15"
+  - first:
+      213: 1461267908310734107
+    second: "lightbox_\u4EFB\u52D9_16"
+  - first:
+      213: 2376398564930430554
+    second: "lightbox_\u4EFB\u52D9_17"
+  - first:
+      213: 4710300405080413749
+    second: "lightbox_\u4EFB\u52D9_18"
+  - first:
+      213: 94578823350629262
+    second: "lightbox_\u4EFB\u52D9_19"
+  - first:
+      213: -8997354063586669508
+    second: "lightbox_\u4EFB\u52D9_20"
+  - first:
+      213: 646696660601946738
+    second: "lightbox_\u4EFB\u52D9_21"
+  - first:
+      213: 4889865291321162558
+    second: "lightbox_\u4EFB\u52D9_22"
+  - first:
+      213: -2732762076058952514
+    second: "lightbox_\u4EFB\u52D9_23"
+  - first:
+      213: -138484454125409386
+    second: "lightbox_\u4EFB\u52D9_24"
+  - first:
+      213: -4121133370993523130
+    second: "lightbox_\u4EFB\u52D9_25"
+  - first:
+      213: 3261119531313787229
+    second: "lightbox_\u4EFB\u52D9_26"
+  - first:
+      213: 6677916636269951135
+    second: "lightbox_\u4EFB\u52D9_27"
+  - first:
+      213: -5239957713379491102
+    second: "lightbox_\u4EFB\u52D9_28"
+  - first:
+      213: -3627979198771364715
+    second: "lightbox_\u4EFB\u52D9_29"
+  - first:
+      213: 1046774755783181832
+    second: "lightbox_\u4EFB\u52D9_30"
+  - first:
+      213: 951368215491641725
+    second: "lightbox_\u4EFB\u52D9_31"
+  - first:
+      213: 268861369607982314
+    second: "lightbox_\u4EFB\u52D9_32"
+  - first:
+      213: -3133275853487088940
+    second: "lightbox_\u4EFB\u52D9_33"
+  - first:
+      213: 7365095887998625524
+    second: "lightbox_\u4EFB\u52D9_34"
+  - first:
+      213: -7072120655247345148
+    second: "lightbox_\u4EFB\u52D9_35"
+  - first:
+      213: -5420532879667664411
+    second: "lightbox_\u4EFB\u52D9_36"
+  - first:
+      213: -4159324370898430476
+    second: "lightbox_\u4EFB\u52D9_37"
+  - first:
+      213: -5842727508986431949
+    second: "lightbox_\u4EFB\u52D9_38"
+  - first:
+      213: 5860398372153863771
+    second: "lightbox_\u4EFB\u52D9_39"
+  - first:
+      213: 1380551104164903519
+    second: "lightbox_\u4EFB\u52D9_40"
+  - first:
+      213: -8102666257501159765
+    second: "lightbox_\u4EFB\u52D9_41"
+  - first:
+      213: -325759798535745245
+    second: "lightbox_\u4EFB\u52D9_42"
+  - first:
+      213: -7746485127657090852
+    second: "lightbox_\u4EFB\u52D9_43"
+  - first:
+      213: -3405543880693773056
+    second: "lightbox_\u4EFB\u52D9_44"
+  - first:
+      213: -249641186036846620
+    second: "lightbox_\u4EFB\u52D9_45"
+  - first:
+      213: 1592684298232479529
+    second: "lightbox_\u4EFB\u52D9_46"
+  - first:
+      213: 7117843347365343544
+    second: "lightbox_\u4EFB\u52D9_47"
+  - first:
+      213: 6059895983873547738
+    second: "lightbox_\u4EFB\u52D9_48"
+  - first:
+      213: -3085031747928279738
+    second: "lightbox_\u4EFB\u52D9_49"
+  - first:
+      213: 8388724281020161132
+    second: "lightbox_\u4EFB\u52D9_50"
+  - first:
+      213: -8912816021638449313
+    second: "lightbox_\u4EFB\u52D9_51"
+  - first:
+      213: 564571742150170503
+    second: "lightbox_\u4EFB\u52D9_52"
+  - first:
+      213: 3231396099555529786
+    second: "lightbox_\u4EFB\u52D9_53"
+  - first:
+      213: 4152028875173850257
+    second: "lightbox_\u4EFB\u52D9_54"
+  - first:
+      213: -4899095104434934499
+    second: "lightbox_\u4EFB\u52D9_55"
+  - first:
+      213: 3698209831657834048
+    second: "lightbox_\u4EFB\u52D9_56"
+  - first:
+      213: -9021954073953567500
+    second: "lightbox_\u4EFB\u52D9_57"
+  - first:
+      213: -4196460487433315287
+    second: "lightbox_\u4EFB\u52D9_58"
+  - first:
+      213: -1837827621036398241
+    second: "lightbox_\u4EFB\u52D9_59"
+  - first:
+      213: -3149897175511884258
+    second: "lightbox_\u4EFB\u52D9_60"
+  - first:
+      213: 7172502073409041946
+    second: "lightbox_\u4EFB\u52D9_61"
+  - first:
+      213: -7365396284986721429
+    second: "lightbox_\u4EFB\u52D9_62"
+  - first:
+      213: 5227041285879551628
+    second: "lightbox_\u4EFB\u52D9_63"
+  - first:
+      213: -7690474344217289036
+    second: "lightbox_\u4EFB\u52D9_64"
+  - first:
+      213: 3690371495907163338
+    second: "lightbox_\u4EFB\u52D9_65"
+  - first:
+      213: -8896265620513005908
+    second: "lightbox_\u4EFB\u52D9_66"
+  - first:
+      213: -7258722928311169517
+    second: "lightbox_\u4EFB\u52D9_67"
+  - first:
+      213: 7303225661323279922
+    second: "lightbox_\u4EFB\u52D9_68"
+  - first:
+      213: -4132192607514538199
+    second: "lightbox_\u4EFB\u52D9_69"
+  - first:
+      213: -2096968370018182118
+    second: "lightbox_\u4EFB\u52D9_70"
+  - first:
+      213: -3010588466408730141
+    second: "lightbox_\u4EFB\u52D9_71"
+  - first:
+      213: -268188168197552033
+    second: "lightbox_\u4EFB\u52D9_72"
+  - first:
+      213: -4981894017724950066
+    second: "lightbox_\u4EFB\u52D9_73"
+  - first:
+      213: 1330806997682323255
+    second: "lightbox_\u4EFB\u52D9_74"
+  - first:
+      213: -1254542541197533551
+    second: "lightbox_\u4EFB\u52D9_75"
+  - first:
+      213: -9035732586570312371
+    second: "lightbox_\u4EFB\u52D9_76"
+  - first:
+      213: -3814311925056141352
+    second: "lightbox_\u4EFB\u52D9_77"
+  - first:
+      213: -1106597854827816227
+    second: "lightbox_\u4EFB\u52D9_78"
+  - first:
+      213: -2744693973128272508
+    second: "lightbox_\u4EFB\u52D9_79"
+  - first:
+      213: 401503481890645437
+    second: "lightbox_\u4EFB\u52D9_80"
+  - first:
+      213: 2800592527422647922
+    second: "lightbox_\u4EFB\u52D9_81"
+  - first:
+      213: 9037744716850644720
+    second: "lightbox_\u4EFB\u52D9_82"
+  - first:
+      213: -526151206156865581
+    second: "lightbox_\u4EFB\u52D9_83"
+  - first:
+      213: -7125603708376914922
+    second: "lightbox_\u4EFB\u52D9_84"
+  - first:
+      213: -2233811471748404667
+    second: "lightbox_\u4EFB\u52D9_85"
+  - first:
+      213: -1575221419647286499
+    second: "lightbox_\u4EFB\u52D9_86"
+  - first:
+      213: 3768218632440359578
+    second: "lightbox_\u4EFB\u52D9_87"
+  - first:
+      213: 6768071036802780285
+    second: "lightbox_\u4EFB\u52D9_88"
+  - first:
+      213: 4928317947681243802
+    second: "lightbox_\u4EFB\u52D9_89"
+  - first:
+      213: 411447373202648145
+    second: "lightbox_\u4EFB\u52D9_90"
+  - first:
+      213: 8649831248369164287
+    second: "lightbox_\u4EFB\u52D9_91"
+  - first:
+      213: -8357064038133457774
+    second: "lightbox_\u4EFB\u52D9_92"
+  - first:
+      213: 5412777078314789769
+    second: "lightbox_\u4EFB\u52D9_93"
+  - first:
+      213: -3080314277838047428
+    second: "lightbox_\u4EFB\u52D9_94"
+  - first:
+      213: 7035782308903369959
+    second: "lightbox_\u4EFB\u52D9_95"
+  - first:
+      213: -650793082328505125
+    second: "lightbox_\u4EFB\u52D9_96"
+  - first:
+      213: 8439078019589592993
+    second: "lightbox_\u4EFB\u52D9_97"
+  - first:
+      213: -4732631414087876578
+    second: "lightbox_\u4EFB\u52D9_98"
+  - first:
+      213: 5371571236261000796
+    second: "lightbox_\u4EFB\u52D9_99"
+  - first:
+      213: 7841272572248753061
+    second: "lightbox_\u4EFB\u52D9_100"
+  - first:
+      213: -3928918042190093888
+    second: "lightbox_\u4EFB\u52D9_101"
+  - first:
+      213: -3966921590061639226
+    second: "lightbox_\u4EFB\u52D9_102"
+  - first:
+      213: -4562134440069004518
+    second: "lightbox_\u4EFB\u52D9_103"
+  - first:
+      213: 7251099011765684054
+    second: "lightbox_\u4EFB\u52D9_104"
+  - first:
+      213: -4294167021366971692
+    second: "lightbox_\u4EFB\u52D9_105"
+  - first:
+      213: 7503123389690612540
+    second: "lightbox_\u4EFB\u52D9_106"
+  - first:
+      213: 2625444472023651974
+    second: "lightbox_\u4EFB\u52D9_107"
+  - first:
+      213: 391349721404622835
+    second: "lightbox_\u4EFB\u52D9_108"
+  - first:
+      213: 6473202914807821542
+    second: "lightbox_\u4EFB\u52D9_109"
+  - first:
+      213: 595382725631207701
+    second: "lightbox_\u4EFB\u52D9_110"
+  - first:
+      213: 9102911515815999427
+    second: "lightbox_\u4EFB\u52D9_111"
+  - first:
+      213: -8737637843481886539
+    second: "lightbox_\u4EFB\u52D9_112"
+  - first:
+      213: 4540177593652315992
+    second: "lightbox_\u4EFB\u52D9_113"
+  - first:
+      213: -6893457086239923763
+    second: "lightbox_\u4EFB\u52D9_114"
+  - first:
+      213: 7683982210084636419
+    second: "lightbox_\u4EFB\u52D9_115"
+  - first:
+      213: 6222951049406923548
+    second: "lightbox_\u4EFB\u52D9_116"
+  - first:
+      213: 4875325505443743783
+    second: "lightbox_\u4EFB\u52D9_117"
+  - first:
+      213: 6151233441854800358
+    second: "lightbox_\u4EFB\u52D9_118"
+  - first:
+      213: -586080461136773017
+    second: "lightbox_\u4EFB\u52D9_119"
+  - first:
+      213: 8880733228252483939
+    second: "lightbox_\u4EFB\u52D9_120"
+  - first:
+      213: -6647878751238900163
+    second: "lightbox_\u4EFB\u52D9_121"
+  - first:
+      213: -6786498912699959899
+    second: "lightbox_\u4EFB\u52D9_122"
+  - first:
+      213: -3041746177423243776
+    second: "lightbox_\u4EFB\u52D9_123"
+  - first:
+      213: -5854572152068395835
+    second: "lightbox_\u4EFB\u52D9_124"
+  - first:
+      213: 4101029637770894110
+    second: "lightbox_\u4EFB\u52D9_125"
+  - first:
+      213: -3639128483568341956
+    second: "lightbox_\u4EFB\u52D9_126"
+  - first:
+      213: -4017980460392992713
+    second: "lightbox_\u4EFB\u52D9_127"
+  - first:
+      213: -3214343929542379833
+    second: "lightbox_\u4EFB\u52D9_128"
+  - first:
+      213: 2165087168903624950
+    second: "lightbox_\u4EFB\u52D9_129"
+  - first:
+      213: -2863545048114214196
+    second: "lightbox_\u4EFB\u52D9_130"
+  - first:
+      213: -4723070268348019630
+    second: "lightbox_\u4EFB\u52D9_131"
+  - first:
+      213: 5157182387492742296
+    second: "lightbox_\u4EFB\u52D9_132"
+  - first:
+      213: 5237354784331743152
+    second: "lightbox_\u4EFB\u52D9_133"
+  - first:
+      213: 8348333270306118898
+    second: "lightbox_\u4EFB\u52D9_134"
+  - first:
+      213: -4431093742188614917
+    second: "lightbox_\u4EFB\u52D9_135"
+  - first:
+      213: -8673682742138589362
+    second: "lightbox_\u4EFB\u52D9_136"
+  - first:
+      213: -5660294433126424841
+    second: "lightbox_\u4EFB\u52D9_137"
+  - first:
+      213: 3964481840460669109
+    second: "lightbox_\u4EFB\u52D9_138"
+  - first:
+      213: -70534902597953307
+    second: "lightbox_\u4EFB\u52D9_139"
+  - first:
+      213: -2024948636874584477
+    second: "lightbox_\u4EFB\u52D9_140"
+  - first:
+      213: -2422428043226666888
+    second: "lightbox_\u4EFB\u52D9_141"
+  - first:
+      213: 8212579026594659463
+    second: "lightbox_\u4EFB\u52D9_142"
+  - first:
+      213: 7638040591145494053
+    second: "lightbox_\u4EFB\u52D9_143"
+  - first:
+      213: 6502911108995046764
+    second: "lightbox_\u4EFB\u52D9_144"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_0"
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 745
+        width: 381
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2534fa08941765ea0800000000000000
+      internalID: -5884391302607453358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_1"
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 700
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e44c388d54848d50800000000000000
+      internalID: 6738656479705580776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_2"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 700
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120c89d282ce828a0800000000000000
+      internalID: -6329549618961399775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_3"
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 700
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8e3e7e30bda9140800000000000000
+      internalID: 4727331568700614886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_4"
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 710
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b267ae469aa9e30800000000000000
+      internalID: 4511104227660409701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_5"
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 700
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3cb66f18e19ade0800000000000000
+      internalID: -1321491472122657881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_6"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 700
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbacf9d0979f05990800000000000000
+      internalID: -7399139889454789957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_7"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 700
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f5ad24d4f96cbb0800000000000000
+      internalID: -4916066789045411963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_8"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 700
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355a0a3055fd78510800000000000000
+      internalID: 1551454152878499155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_9"
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 700
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a73dcd28df961a20800000000000000
+      internalID: 3032787149910783907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_10"
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 700
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cde430144a4e290800000000000000
+      internalID: -7861978450346713964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_11"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 700
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3e6b7bb460fcde0800000000000000
+      internalID: -1310822044266994772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_12"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 710
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cb71d4d489ce8d0800000000000000
+      internalID: -2815708209240097654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_13"
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 700
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7413ce64fe8e09bb0800000000000000
+      internalID: -4931185477585981113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_14"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 700
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087f1f5821462ec50800000000000000
+      internalID: 6693022026945394560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_15"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 695
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e98e46765bb0950800000000000000
+      internalID: 6416421549798628910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_16"
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 697
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b151a84ab67774410800000000000000
+      internalID: 1461267908310734107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_17"
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 702
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a562d6377e9aaf020800000000000000
+      internalID: 2376398564930430554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_18"
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 698
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536523e13495e5140800000000000000
+      internalID: 4710300405080413749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_19"
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 698
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83b61150f2005100800000000000000
+      internalID: 94578823350629262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_20"
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 699
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ccf71362af22380800000000000000
+      internalID: -8997354063586669508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_21"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 699
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2724c9cbf2789f800800000000000000
+      internalID: 646696660601946738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_22"
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 668
+        width: 7
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bb5b8239a4cd340800000000000000
+      internalID: 4889865291321162558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_23"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 669
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcd8d0ee57431ad0800000000000000
+      internalID: -2732762076058952514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_24"
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 668
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69be0f86f11041ef0800000000000000
+      internalID: -138484454125409386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_25"
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 668
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6464ce5a80bcec6c0800000000000000
+      internalID: -4121133370993523130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_26"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 680
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51fb028fe2d14d20800000000000000
+      internalID: 3261119531313787229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_27"
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 670
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98ba80bcc9bcac50800000000000000
+      internalID: 6677916636269951135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_28"
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 670
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e282ffd83ee747b0800000000000000
+      internalID: -5239957713379491102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_29"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 670
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cf9bcf324d6adc0800000000000000
+      internalID: -3627979198771364715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_30"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 670
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8068d462814e68e00800000000000000
+      internalID: 1046774755783181832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_31"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 670
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d710af6f950f33d00800000000000000
+      internalID: 951368215491641725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_32"
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 670
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec0f4dbdff2bb300800000000000000
+      internalID: 268861369607982314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_33"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 670
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad799463e5484d0800000000000000
+      internalID: -3133275853487088940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_34"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 680
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f629dc20b3163660800000000000000
+      internalID: 7365095887998625524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_35"
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 670
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a7747dbb7cadd90800000000000000
+      internalID: -7072120655247345148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_36"
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 670
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9651ea01666c4b0800000000000000
+      internalID: -5420532879667664411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_37"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 665
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f559fe858c1746c0800000000000000
+      internalID: -4159324370898430476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_38"
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 670
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336f57369467aeea0800000000000000
+      internalID: -5842727508986431949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_39"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 680
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e228e0541545150800000000000000
+      internalID: 5860398372153863771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_40"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 668
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ab50e2ae3b82310800000000000000
+      internalID: 1380551104164903519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_41"
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 669
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae7914f7fb8d8f80800000000000000
+      internalID: -8102666257501159765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_42"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 669
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3219c2e603baa7bf0800000000000000
+      internalID: -325759798535745245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_43"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 669
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0172ca1d4fe7490800000000000000
+      internalID: -7746485127657090852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_44"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 667
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d0e3442e31db0d0800000000000000
+      internalID: -3405543880693773056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_45"
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 638
+        width: 7
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef67f8f9a8198cf0800000000000000
+      internalID: -249641186036846620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_46"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 639
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f3d7b4ee95a1610800000000000000
+      internalID: 1592684298232479529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_47"
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 638
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831b69effc8a7c260800000000000000
+      internalID: 7117843347365343544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_48"
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 638
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add59966a43191450800000000000000
+      internalID: 6059895983873547738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_49"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 638
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645beef68f3cf25d0800000000000000
+      internalID: -3085031747928279738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_50"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 638
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c96e8c94cba6470800000000000000
+      internalID: 8388724281020161132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_51"
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 650
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5774d9ec015f4480800000000000000
+      internalID: -8912816021638449313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_52"
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 640
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787951d1203c5d700800000000000000
+      internalID: 564571742150170503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_53"
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 640
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a341792c1a938dc20800000000000000
+      internalID: 3231396099555529786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_54"
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 640
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ce6e97348fe9930800000000000000
+      internalID: 4152028875173850257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_55"
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 640
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dec4385fae20cb0800000000000000
+      internalID: -4899095104434934499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_56"
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 640
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04682d87f3ea25330800000000000000
+      internalID: 3698209831657834048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_57"
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 640
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcfb12f1949bc280800000000000000
+      internalID: -9021954073953567500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_58"
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 640
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c1394ab6d23c5c0800000000000000
+      internalID: -4196460487433315287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_59"
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 650
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5969b11489be76e0800000000000000
+      internalID: -1837827621036398241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_60"
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 640
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e9b9e25315944d0800000000000000
+      internalID: -3149897175511884258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_61"
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 640
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a167c4c52a8d98360800000000000000
+      internalID: 7172502073409041946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_62"
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 635
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b72633a1bd8c990800000000000000
+      internalID: -7365396284986721429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_63"
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 640
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86d62ffa5e2a8840800000000000000
+      internalID: 5227041285879551628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_64"
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 650
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be5cae6452f54590800000000000000
+      internalID: -7690474344217289036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_65"
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 638
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accf5c6b255d63330800000000000000
+      internalID: 3690371495907163338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_66"
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 638
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae5dc57d8d1a8480800000000000000
+      internalID: -8896265620513005908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_67"
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 638
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e870f74f5d34b90800000000000000
+      internalID: -7258722928311169517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_68"
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 650
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ef0b97b054a5560800000000000000
+      internalID: 7303225661323279922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_69"
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 640
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fc99d77b087a6c0800000000000000
+      internalID: -4132192607514538199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_70"
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 640
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c16dfa06216e2e0800000000000000
+      internalID: -2096968370018182118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_71"
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 640
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1d1d69dbd3836d0800000000000000
+      internalID: -3010588466408730141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_72"
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 640
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f584f9d2844374cf0800000000000000
+      internalID: -268188168197552033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_73"
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 640
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec95cdc39c1ccdab0800000000000000
+      internalID: -4981894017724950066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_74"
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 640
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f7579d9e9f77210800000000000000
+      internalID: 1330806997682323255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_75"
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 640
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e1e44a438f69ee0800000000000000
+      internalID: -1254542541197533551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_76"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 640
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d451e0cf511aa9280800000000000000
+      internalID: -9035732586570312371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_77"
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 648
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d70e746387d01bc0800000000000000
+      internalID: -3814311925056141352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_78"
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 640
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda57c13d1394a0f0800000000000000
+      internalID: -1106597854827816227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_79"
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 640
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485a88a9f53e8e9d0800000000000000
+      internalID: -2744693973128272508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_80"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 640
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5ac2e1a4d629500800000000000000
+      internalID: 401503481890645437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_81"
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 640
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ee3a5c014bdd620800000000000000
+      internalID: 2800592527422647922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_82"
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 640
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6cb8a9fe48c6d70800000000000000
+      internalID: 9037744716850644720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_83"
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 640
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df60e2044cb2b8f0800000000000000
+      internalID: -526151206156865581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_84"
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 639
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614ecf72e25cc1d90800000000000000
+      internalID: -7125603708376914922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_85"
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 639
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a6e3b3d48eff0e0800000000000000
+      internalID: -2233811471748404667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_86"
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 637
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d134657f670b32ae0800000000000000
+      internalID: -1575221419647286499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_87"
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 637
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9aad9e91e66b4430800000000000000
+      internalID: 3768218632440359578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_88"
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 639
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c4d3bcfb40ded50800000000000000
+      internalID: 6768071036802780285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_89"
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 574
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9209b3ef07e46440800000000000000
+      internalID: 4928317947681243802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_90"
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 574
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ce28bb431c5b500800000000000000
+      internalID: 411447373202648145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_91"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 383
+        width: 381
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff1e1e01bf5a0870800000000000000
+      internalID: 8649831248369164287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_92"
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 510
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c1dd1f88eb50c80800000000000000
+      internalID: -8357064038133457774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_93"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 510
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b6459131c0e1b40800000000000000
+      internalID: 5412777078314789769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_94"
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 510
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3736e80c768045d0800000000000000
+      internalID: -3080314277838047428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_95"
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 510
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecb9279bbe14a160800000000000000
+      internalID: 7035782308903369959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_96"
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 505
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd42781c32be7f6f0800000000000000
+      internalID: -650793082328505125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_97"
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 510
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7d1752fb0ad1570800000000000000
+      internalID: 8439078019589592993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_98"
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 510
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10007eadc0525eb0800000000000000
+      internalID: -4732631414087876578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_99"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 510
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56fa0f5497ab8a40800000000000000
+      internalID: 5371571236261000796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_100"
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 510
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a386ef0cdbc1dc60800000000000000
+      internalID: 7841272572248753061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_101"
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 518
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1e2af5bdda979c0800000000000000
+      internalID: -3928918042190093888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_102"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 510
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c95c8cd4d9a2f8c0800000000000000
+      internalID: -3966921590061639226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_103"
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 510
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a138c12e5ea00b0c0800000000000000
+      internalID: -4562134440069004518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_104"
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 510
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657ca7b122411a460800000000000000
+      internalID: 7251099011765684054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_105"
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 510
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2793578dd0864c0800000000000000
+      internalID: -4294167021366971692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_106"
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 520
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b0f6c38f2702860800000000000000
+      internalID: 7503123389690612540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_107"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 509
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6869b7c46d37f6420800000000000000
+      internalID: 2625444472023651974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_108"
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 510
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f745478f7a5e6500800000000000000
+      internalID: 391349721404622835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_109"
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 510
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4b42821cf65d950800000000000000
+      internalID: 6473202914807821542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_110"
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 510
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519e6aa3f69334800800000000000000
+      internalID: 595382725631207701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_111"
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 510
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7760a5bc9045e70800000000000000
+      internalID: 9102911515815999427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_112"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 510
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b08043ecacadb680800000000000000
+      internalID: -8737637843481886539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_113"
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 510
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85785de6773f10f30800000000000000
+      internalID: 4540177593652315992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_114"
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 520
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1254c9d458550a0800000000000000
+      internalID: -6893457086239923763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_115"
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 509
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307048ccb1df2aa60800000000000000
+      internalID: 7683982210084636419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_116"
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 507
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c134b82420d5c5650800000000000000
+      internalID: 6222951049406923548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_117"
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 240
+        width: 361
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728406477b2a8a340800000000000000
+      internalID: 4875325505443743783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_118"
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 312
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1424889329d5550800000000000000
+      internalID: 6151233441854800358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_119"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 312
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76045200de2ddd7f0800000000000000
+      internalID: -586080461136773017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_120"
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 312
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3615ff6a1d3be3b70800000000000000
+      internalID: 8880733228252483939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_121"
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 312
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36b98a6f7dfdb3a0800000000000000
+      internalID: -6647878751238900163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_122"
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 307
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5b1fff13381d1a0800000000000000
+      internalID: -6786498912699959899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_123"
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 312
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00609cda7fb89c5d0800000000000000
+      internalID: -3041746177423243776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_124"
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 312
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cca11485a160cea0800000000000000
+      internalID: -5854572152068395835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_125"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 312
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bdea43ab8c9e830800000000000000
+      internalID: 4101029637770894110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_126"
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 312
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c27e4dce73f7dc0800000000000000
+      internalID: -3639128483568341956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_127"
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 320
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730b0d73f044d38c0800000000000000
+      internalID: -4017980460392992713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_128"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 312
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c671b5f93b5463d0800000000000000
+      internalID: -3214343929542379833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_129"
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 312
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8b14a1f4feb0e10800000000000000
+      internalID: 2165087168903624950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_130"
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 312
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccac2d053f4a248d0800000000000000
+      internalID: -2863545048114214196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_131"
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 312
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c48e56d98447eb0800000000000000
+      internalID: -4723070268348019630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_132"
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 322
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894e768be0ef19740800000000000000
+      internalID: 5157182387492742296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_133"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 311
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf39ca7d62dea840800000000000000
+      internalID: 5237354784331743152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_134"
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 312
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcdb23c0ec3bd370800000000000000
+      internalID: 8348333270306118898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_135"
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 312
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa246ae7b79182c0800000000000000
+      internalID: -4431093742188614917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_136"
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 312
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fa46c4083e0a780800000000000000
+      internalID: -8673682742138589362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_137"
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 312
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fed06dd3389271b0800000000000000
+      internalID: -5660294433126424841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_138"
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 312
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0252baa3ba40730800000000000000
+      internalID: 3964481840460669109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_139"
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 322
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8d16a31e8650ff0800000000000000
+      internalID: -70534902597953307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_140"
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 311
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ecda281ffe5e3e0800000000000000
+      internalID: -2024948636874584477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_141"
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 309
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878a78d778ec16ed0800000000000000
+      internalID: -2422428043226666888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_142"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 123
+        width: 381
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c7ff1dc11f8f170800000000000000
+      internalID: 8212579026594659463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_143"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 84
+        width: 381
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526ed371375cff960800000000000000
+      internalID: 7638040591145494053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "lightbox_\u4EFB\u52D9_144"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 42
+        width: 381
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d5791233bfe3a50800000000000000
+      internalID: 6502911108995046764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3c768096fdf77ea45be9267372267d44
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
