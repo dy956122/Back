@@ -38,7 +38,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     /// 小紅帽的走路速度
     /// </summary>
     [Header("小紅帽的走路速度"), Tooltip("走路速度")]
-    [Range(1.0f, 3.0f)]
+    [Range(1.0f, 10.0f)]
     public float walkSpeed = 1.0f;
 
     /// <summary>
@@ -49,7 +49,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     public byte runAccelerate;
 
     /// <summary>
-    /// 小紅帽的旋轉角度
+    /// 小紅帽的走路旋轉角度
     /// </summary>
     public Vector3 angle;
 
@@ -67,7 +67,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     {
         get
         {
-            if (transform.position.y < 0.051f) return true;
+            if (transform.position.y < 4.8f) return true;
             else return false;
         }
     }
