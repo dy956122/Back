@@ -38,12 +38,6 @@ public class Menu : MonoBehaviour
     /// </summary>
     public Sprite MusicCloseButton;
 
-    [Header("螢幕大小調整"), Tooltip("螢幕大小調整")]
-    /// <summary>
-    /// 螢幕大小調整
-    /// </summary>
-    public Dropdown ScreenSize;
-
     #endregion 屬性與欄位設定 結束
 
 
@@ -57,29 +51,11 @@ public class Menu : MonoBehaviour
     void Update()
     {
         AudioListener.volume = GameThemeMusic.value;
-        ScreenSizeAction();
     }
 
 
     #region 方法創建
-    public void ScreenSizeAction() // 螢幕調整
-    {
-        switch (ScreenSize.value) // 設定螢幕大小
-        {
-            case 0:
-                Screen.SetResolution(1024, 768, false);
-                break;
-
-            case 1:
-                Screen.SetResolution(1280, 720, false);
-                break;
-
-            case 2:
-                Screen.SetResolution(1920, 720, false);
-                break;
-        } // 設定螢幕大小 結束
-    } // 螢幕調整 結束
-
+   
     public void ChangeThemeMusic() // 調整音量功能
     {
         if (GameThemeMusic.value == 0)
