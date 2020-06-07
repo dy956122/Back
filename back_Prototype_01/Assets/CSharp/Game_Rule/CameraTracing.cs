@@ -6,7 +6,7 @@ public class CameraTracing : MonoBehaviour
 {
     #region 基礎欄位
     /// <summary>
-    /// 玩家變形元件
+    /// 玩家位移元件
     /// </summary>
     private Transform Player;
     
@@ -25,8 +25,8 @@ public class CameraTracing : MonoBehaviour
     private void Track()
     {
         Vector3 posTrack = Player.position;
-        posTrack.y += 755f;
-        posTrack.z += -1170f;
+        posTrack.y += 5.0f;
+        posTrack.z += -25f;
 
         Vector3 posCam = transform.position;
 
@@ -37,10 +37,11 @@ public class CameraTracing : MonoBehaviour
     #endregion 設定方法結束
 
 
-    #region 觸發
+    #region 事件
     void Start()
     {
-        Player = GameObject.Find("Little_Red").transform;
+        // 最後請把要追蹤的角色名字替換掉
+        Player = GameObject.Find("Cube_Character").transform;
     }
 
     
@@ -54,6 +55,6 @@ public class CameraTracing : MonoBehaviour
     {
         Track();
     }
-    #endregion 觸發事件 結束
+    #endregion 事件 結束
 
 }

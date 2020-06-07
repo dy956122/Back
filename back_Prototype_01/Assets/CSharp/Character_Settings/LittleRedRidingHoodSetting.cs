@@ -38,7 +38,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     /// 小紅帽的走路速度
     /// </summary>
     [Header("小紅帽的走路速度"), Tooltip("走路速度")]
-    [Range(1.0f, 50.0f)]
+    [Range(1.0f, 15.0f)]
     public float walkSpeed = 1.0f;
 
     /// <summary>
