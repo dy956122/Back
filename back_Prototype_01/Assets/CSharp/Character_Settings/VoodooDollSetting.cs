@@ -5,42 +5,42 @@ using UnityEngine;
 public class VoodooDollSetting : MonoBehaviour
 {
     /// <summary>
-    /// 巫毒娃娃的生命值
+    /// 怪物的生命值
     /// </summary>
-    [Header("巫毒娃娃的生命值"), Tooltip("生命值")]
+    [Header("怪物的生命值"), Tooltip("生命值")]
     [Range(1, 12)]
     public byte HP = 6;
 
     /// <summary>
-    /// 巫毒娃娃的攻擊力
+    /// 怪物的攻擊力
     /// </summary>
-    [Header("巫毒娃娃的攻擊力"), Tooltip("攻擊力")]
+    [Header("怪物的攻擊力"), Tooltip("攻擊力")]
     [Range(1, 5)]
     public byte force = 1;
 
     /// <summary>
-    /// 巫毒娃娃的攻擊速度
+    /// 怪物的攻擊速度
     /// </summary>
-    [Header("巫毒娃娃的攻擊速度"), Tooltip("攻擊速度")]
+    [Header("怪物的攻擊速度"), Tooltip("攻擊速度")]
     [Range(1.0f, 5.0f)]
     public float attackSpeed = 1f;
 
     /// <summary>
-    /// 巫毒娃娃的走路速度
+    /// 怪物的走路速度
     /// </summary>
-    [Header("巫毒娃娃的走路速度"), Tooltip("走路速度")]
+    [Header("怪物的走路速度"), Tooltip("走路速度")]
     [Range(1.0f, 3.0f)]
     public float walkSpeed = 1.0f;
 
     /// <summary>
-    /// 巫毒娃娃的跑步加速度
+    /// 怪物的跑步加速度
     /// </summary>
-    [Header("巫毒娃娃的跑步加速度"), Tooltip("跑步加速度")]
+    [Header("怪物的跑步加速度"), Tooltip("跑步加速度")]
     [Range(1, 3)]
     public byte runAccelerate;
 
     /// <summary>
-    /// 巫毒娃娃的道具掉落
+    /// 怪物的道具掉落
     /// </summary>
     [Header("是否會掉落道具"), Tooltip("是否會掉落道具")]
     public bool 是否掉道具 = false;

@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
     /// <summary>
     /// 音樂開關按鈕
     /// </summary>
-    bool MusicSwith;
+    bool MusicSwith = false;
 
     [Header("音樂開關按鈕"), Tooltip("音樂開關按鈕")]
     /// <summary>
@@ -34,20 +34,19 @@ public class Menu : MonoBehaviour
 
     [Header("聲音關閉圖"), Tooltip("聲音關閉圖")]
     /// <summary>
-    /// 聲音開啟圖
+    /// 聲音關閉圖
     /// </summary>
     public Sprite MusicCloseButton;
 
     #endregion 屬性與欄位設定 結束
 
 
-    // Start is called before the first frame update
     void Start()
     {
         ControlThemeMusic();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         AudioListener.volume = GameThemeMusic.value;

@@ -48,6 +48,12 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     [Range(1, 3)]
     public byte runAccelerate;
 
+    [Header("小紅帽走路聲音"),Tooltip("小紅帽走路聲")]
+    /// <summary>
+    /// 小紅帽走路聲
+    /// </summary>
+    public AudioClip redWalkSound;
+
     /// <summary>
     /// 小紅帽的走路旋轉角度
     /// </summary>
