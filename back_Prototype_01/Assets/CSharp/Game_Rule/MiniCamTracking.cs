@@ -41,7 +41,7 @@ public class MiniCamTracking : MonoBehaviour
     void Start()
     {
         // 最後請把要追蹤的角色名字替換掉
-        Player = GameObject.Find("Cube_Character").transform;
+        Player = GameObject.Find("New little red (1)FINISH").transform;
     }
 
 
