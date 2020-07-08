@@ -8,8 +8,8 @@ public class CameraTracing : MonoBehaviour
     /// <summary>
     /// 玩家位移元件
     /// </summary>
-    private Transform Player;
-    
+    public Transform Player;
+
     [Header("追蹤速度"),Range(0.1f,60.0f)]
     public float ChasingSpeed;
 
@@ -22,7 +22,7 @@ public class CameraTracing : MonoBehaviour
     #endregion 基礎欄位 結束
 
     #region 設定方法
-    private void Track()
+    protected virtual void Track()
     {
         Vector3 posTrack = Player.position;
         posTrack.y += 5.0f;
@@ -40,8 +40,7 @@ public class CameraTracing : MonoBehaviour
     #region 事件
     void Start()
     {
-        // 最後請把要追蹤的角色名字替換掉
-        Player = GameObject.Find("New little red (1)FINISH").transform;
+        Player = Player.transform;
     }
 
     

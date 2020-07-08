@@ -1,20 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    /// <summary>
+    /// 介面顯示用視窗
+    /// </summary>
+    [Header("介面顯示用視窗")]
+    public GameObject SettingButton;
+    private bool settingSwith;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void FixedUpdate()
     {
-       // PlayerPrefs.GetFloat()
+        SettingButtonControl();
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// 使用 ESC 鍵 啟動畫面左上方設定鍵
+    /// </summary>
+    public void SettingButtonControl()
     {
-        
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            settingSwith = !settingSwith;
+            if (settingSwith)
+            {
+                //Time.timeScale = 0f;
+                SettingButton.SetActive(true);
+            }
+            else
+            {
+                //Time.timeScale = 1.0f;
+                SettingButton.SetActive(false);
+            }
+        }
     }
 }
