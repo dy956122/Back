@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject SettingButton;
     private bool settingSwith;
 
-    private void FixedUpdate()
+    private void Update()
     {
         SettingButtonControl();
     }
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void SettingButtonControl()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             settingSwith = !settingSwith;
             if (settingSwith)

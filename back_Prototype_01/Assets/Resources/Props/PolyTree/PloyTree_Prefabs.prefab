@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6759083792910001089}
   - component: {fileID: 1076817215187836728}
   - component: {fileID: 5321846495815501446}
+  - component: {fileID: 4092910718939010605}
   m_Layer: 0
   m_Name: PloyTree_Prefabs
   m_TagString: Untagged
@@ -89,8 +90,22 @@ MeshCollider:
   m_GameObject: {fileID: 1643050261668293604}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
+  m_Enabled: 0
+  serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5793041269970847433, guid: d0be319523c51664eaec9eaac4e58158, type: 3}
+--- !u!136 &4092910718939010605
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643050261668293604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.04
+  m_Height: 45.492775
+  m_Direction: 1
+  m_Center: {x: -0.74, y: 22.746387, z: -1.9}
