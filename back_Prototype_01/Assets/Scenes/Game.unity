@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3370,9 +3370,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1
-  m_Height: 3
+  m_Height: 2.6
   m_Direction: 1
-  m_Center: {x: 0, y: 1.27, z: 0}
+  m_Center: {x: 0, y: 1.4, z: 0}
 --- !u!95 &930426285
 Animator:
   serializedVersion: 3
@@ -4859,7 +4859,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  m_Color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 50.7
@@ -5401,7 +5401,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: edc17950652905b4199bba8839a6280b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 310.1
+      value: 355
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: edc17950652905b4199bba8839a6280b,
         type: 3}
@@ -5411,7 +5411,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: edc17950652905b4199bba8839a6280b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -390.2
+      value: 306
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: edc17950652905b4199bba8839a6280b,
         type: 3}

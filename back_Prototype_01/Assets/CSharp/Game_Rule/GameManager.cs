@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void SettingButtonControl()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             settingSwith = !settingSwith;
             if (settingSwith)
