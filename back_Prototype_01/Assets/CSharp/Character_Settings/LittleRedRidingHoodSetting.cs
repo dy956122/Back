@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class LittleRedRidingHoodSetting : MonoBehaviour
 {
@@ -11,28 +13,28 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     /// </summary>
     [Header("小紅帽的生命值"), Tooltip("生命值")]
     [Range(1, 12)]
-    public byte HP = 12;
+    public float LR_HP = 5;
 
     /// <summary>
     /// 小紅帽的魔力值
     /// </summary>
-    [Header("小紅帽的魔力值"), Tooltip("魔力值")]
+    [Header("小紅帽的體力值"), Tooltip("體力值")]
     [Range(1, 10)]
-    public byte MP = 5;
+    public float MP = 4;
 
     /// <summary>
     /// 小紅帽的攻擊力
     /// </summary>
     [Header("小紅帽的攻擊力"), Tooltip("攻擊力")]
     [Range(1, 5)]
-    public byte force = 2;
+    public float force = 2;
 
     /// <summary>
     /// 小紅帽的攻擊速度
     /// </summary>
     [Header("小紅帽的攻擊速度"), Tooltip("攻擊速度")]
     [Range(1.0f, 5.0f)]
-    public float attackSpeed = 1.5f;
+    public float attackSpeed = 1.0f;
 
     /// <summary>
     /// 小紅帽的走路速度
@@ -41,18 +43,19 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     [Range(1.0f, 15.0f)]
     public float walkSpeed = 1.0f;
 
-    /// <summary>
-    /// 小紅帽的跑步加速度
-    /// </summary>
-    [Header("小紅帽的跑步加速度"), Tooltip("跑步加速度")]
-    [Range(1, 3)]
-    public byte runAccelerate;
-
-    [Header("小紅帽走路聲音"),Tooltip("小紅帽走路聲")]
+    [Header("小紅帽走路聲音"), Tooltip("小紅帽走路聲")]
     /// <summary>
     /// 小紅帽走路聲
     /// </summary>
     public AudioClip redWalkSound;
+
+    float scriptHp;
+
+    /// <summary>
+    /// 小紅帽HP槽
+    /// </summary>
+    [Header("小紅帽HP槽")]
+    public Image LR_HPBar;
 
     /// <summary>
     /// 小紅帽的走路旋轉角度
@@ -60,6 +63,9 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     public Vector3 angle;
 
     //private Animator LR_ani;
+
+    // private Transform Cam;
+    // private float RotateCam = 5.0f;
 
     /// <summary>
     /// 小紅帽的角色本體
@@ -86,13 +92,19 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
 
     #region 方法
 
-    private void Move() //移動功能
+    private void LR_Move() //移動功能
     {
 
         #region 角色移動
         float v = Input.GetAxis("Vertical"); // 前後移動
 
         float h = Input.GetAxis("Horizontal"); // 左右移動
+
+        // LR_rigibogy.AddForce(Cam.forward * walkSpeed * Mathf.Abs(v) + Cam.right * walkSpeed * Mathf.Abs(h));
+
+        // float x = Input.GetAxis("Mouse X");
+        // float y = Input.GetAxis("Mouse Y");
+        // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
 
         // 前後推進
         LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
@@ -113,7 +125,21 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
 
     } // 移動功能 結束
 
+    public void LR_Attack()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            // gameObject.GetComponent<Animator>().SetBool(1, true);
+            GetComponent<Animator>().SetTrigger("Hurt");
+        }
+    }
 
+    public void LR_Hurt(float hurt)
+    {
+        LR_HP -= hurt;
+       // LR_HPBar.
+
+    }
 
     #endregion 方法結束
 
@@ -124,19 +150,23 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     void Start()
     {
         LR_rigibogy = GetComponent<Rigidbody>();
-        // print("哈囉,我是小紅帽,大野狼不要欺負我喔!");
+        scriptHp = LR_HP;
     }
 
 
     void FixedUpdate()
     {
-        Move();
+        LR_Move();
+
     }
 
     private void Update()
     {
-        
+        LR_Attack();
     }
 
-    #endregion 事件 結束
+
 }
+
+#endregion 事件 結束
+

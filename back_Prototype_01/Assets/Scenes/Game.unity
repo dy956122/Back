@@ -420,13 +420,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66258424}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.46, z: 0.72}
+  m_LocalRotation: {x: -0.070017606, y: 0, z: 0, w: 0.99754584}
+  m_LocalPosition: {x: 0, y: 1, z: -0.14}
   m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
   m_Children: []
   m_Father: {fileID: 930426278}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.03, y: 0, z: 0}
 --- !u!108 &66258426
 Light:
   m_ObjectHideFlags: 0
@@ -3335,12 +3335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7897f83ce4cda1c4a84d3c731d404b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 12
-  MP: 5
+  LR_HP: 5
+  MP: 4
   force: 2
   attackSpeed: 1.5
   walkSpeed: 15
-  runAccelerate: 1
   redWalkSound: {fileID: 8300000, guid: 4b7280a14e410584890af91691edcdfa, type: 3}
   angle: {x: 0, y: 0, z: 0}
 --- !u!54 &930426283
@@ -4698,7 +4697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!154 &1438622274
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -4859,7 +4858,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
+  m_Color: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 50.7
