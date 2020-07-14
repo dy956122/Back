@@ -3,12 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class GameBegin : MonoBehaviour
 {
+    /// <summary>
+    /// 配合轉場動畫用的接關
+    /// </summary>
     public string sceneName;
-    public int animationTime;
+    public float animationTime;
 
     void Start()
     {
-        Invoke("LoadScene", 6.0f);
+        Invoke("LoadScene", animationTime);
     }
 
     private void LoadScene()
