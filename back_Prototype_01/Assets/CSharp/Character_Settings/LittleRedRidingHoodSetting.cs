@@ -123,6 +123,8 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
         transform.eulerAngles = angle;
         #endregion 角色轉向 結束
 
+        //GetComponent<Animator>().SetBool("LR_Walk", Mathf.Abs(v) > 0 || Mathf.Abs(v) > 0);
+
     } // 移動功能 結束
 
     public void LR_Attack()
@@ -137,7 +139,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     public void LR_Hurt(float hurt)
     {
         LR_HP -= hurt;
-       // LR_HPBar.
+        // LR_HPBar.
 
     }
 

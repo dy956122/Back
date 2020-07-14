@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8852481293517213366}
   - component: {fileID: 1281115555394167661}
   m_Layer: 0
-  m_Name: Polytree02
+  m_Name: Polytree_Prefabs01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 64a894c218263db44a6b3b8006d8db96, type: 3}
+  - {fileID: 2100000, guid: c738cfe960e73894f85502ee65de0ebf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
