@@ -49,13 +49,14 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     /// </summary>
     public AudioClip redWalkSound;
 
-    float scriptHp;
-
     /// <summary>
     /// 小紅帽HP槽
     /// </summary>
     [Header("小紅帽HP槽")]
     public Image LR_HPBar;
+
+
+    float scriptHp;
 
     /// <summary>
     /// 小紅帽的走路旋轉角度
@@ -139,7 +140,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     public void LR_Hurt(float hurt)
     {
         LR_HP -= hurt;
-        // LR_HPBar.
+        
 
     }
 
