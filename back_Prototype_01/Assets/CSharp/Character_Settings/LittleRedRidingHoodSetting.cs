@@ -108,10 +108,12 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
         // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
 
         // 前後推進
-        LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
+        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
 
         // 左右移動
-        LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
+        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
+
+        LR_rigibogy.velocity = Vector3.forward * walkSpeed * Mathf.Abs(v) + Vector3.right * walkSpeed * Mathf.Abs(h);
 
         #endregion 角色移動 結束
 
@@ -140,7 +142,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     public void LR_Hurt(float hurt)
     {
         LR_HP -= hurt;
-        
+
 
     }
 
@@ -166,6 +168,7 @@ public class LittleRedRidingHoodSetting : MonoBehaviour
     private void Update()
     {
         LR_Attack();
+
     }
 
 
