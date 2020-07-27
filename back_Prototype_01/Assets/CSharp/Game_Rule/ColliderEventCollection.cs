@@ -7,7 +7,7 @@ public class ColliderEventCollection : ColliderEvent
 
     protected override void OnTriggerEnter(Collider storyHappen)
     {
-        if (true)
+        if (true /* propThing = 7*/)
         {
             if (storyHappen.GetComponent<Collider>().tag == "Player")
             {

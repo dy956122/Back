@@ -72,7 +72,7 @@ public class VoodooDollSetting : MonoBehaviour
     #region 設定動畫腳本相關欄位
     public Transform Monster;
 
-    public Animator MonsterAni;
+    // public Animator MonsterAni;
 
     private Player red;
 
@@ -102,7 +102,8 @@ public class VoodooDollSetting : MonoBehaviour
     /// </summary>
     public virtual void Att()
     {
-        MonsterAni.SetBool("Att", true);
+        // MonsterAni.SetBool("Att", true);
+        gameObject.GetComponent<Animator>().SetBool("Att", true);
         red.GetComponent<Player>().LR_Hurt(force);
     }
 
@@ -111,7 +112,8 @@ public class VoodooDollSetting : MonoBehaviour
     /// </summary>
     protected virtual void Track()
     {
-        MonsterAni.SetFloat("Walk", 0.6f);                                          // 啟動怪物動畫(移動)
+        // MonsterAni.SetFloat("Walk", 0.6f);                                          // 啟動怪物動畫(移動)
+        gameObject.GetComponent<Animator>().SetFloat("Walk", 0.6f);
 
         // 怪物緩慢移動至玩家附近
         Monster.position = Vector3.Lerp(Monster.position, redPos.position, Time.deltaTime * walkSpeed);                            
@@ -120,26 +122,15 @@ public class VoodooDollSetting : MonoBehaviour
     }
 
     /// <summary>
-    /// 掉落道具
-    /// </summary>
-    protected virtual void PropDrop()
-    {
-        // 如果掉落機率 大於 0.7
-        if ( (Random.Range(0, dropProbability) / DropProbability) > 0.7f)
-        {   
-            // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)
-            Instantiate(dropThing, transform.position, Quaternion.identity);
-        }
-    }
-
-    /// <summary>
     /// 怪物受傷的指令,需要被玩家腳本呼叫
     /// </summary>
     /// <param name="Damage"></param>
     public void Hurt(byte Damage)
     {
-        HP -= Damage;                           // HP 受損
-        MonsterAni.SetTrigger("Hurt");          // 觸發怪物動畫(受傷)
+        HP -= Damage;                              // HP 受損
+
+        // MonsterAni.SetTrigger("Hurt");          // 觸發怪物動畫(受傷)
+        gameObject.GetComponent<Animator>().SetTrigger("Hurt");
     }
 
 
@@ -150,8 +141,10 @@ public class VoodooDollSetting : MonoBehaviour
     {
         // 如果 Hp 小於等於 0
         if (HP <= 0)
-        {   
-            MonsterAni.SetTrigger("Dead");              // 觸發怪物動畫(死亡)
+        {
+            // MonsterAni.SetTrigger("Dead");              // 觸發怪物動畫(死亡)
+            gameObject.GetComponent<Animator>().SetTrigger("Dead");
+
             GetComponent<Collider>().enabled = false;   // 怪物碰撞器關閉
             Destroy(gameObject, 2);                     // 兩秒後刪除怪物
 
@@ -160,7 +153,21 @@ public class VoodooDollSetting : MonoBehaviour
     }
 
     /// <summary>
-    /// 觸發事件
+    /// 掉落道具
+    /// </summary>
+    protected virtual void PropDrop()
+    {
+        // 如果掉落機率 大於 0.7
+        if ((Random.Range(0, dropProbability) / DropProbability) > 0.7f)
+        {
+            // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)
+            Instantiate(dropThing, transform.position, Quaternion.identity);
+        }
+    }
+
+
+    /// <summary>
+    /// 觸發事件,之後要給大野狼繼承腳本,因此使用protected
     /// </summary>
     /// <param name="inAttackArea"></param>
     protected virtual void OnTriggerEnter(Collider inAttackArea)
@@ -181,9 +188,11 @@ public class VoodooDollSetting : MonoBehaviour
     }
 
     protected virtual void OnTriggerExit(Collider other)
-    {   
+    {
         // 如果玩家離開怪物的Collider範圍,關閉攻擊模式,進入待機狀態
-        MonsterAni.SetBool("Att", false);
+        //  MonsterAni.SetBool("Att", false);
+        gameObject.GetComponent<Animator>().SetBool("Att", false); ; 
+
     }
     #endregion 設定方法 結束
 }

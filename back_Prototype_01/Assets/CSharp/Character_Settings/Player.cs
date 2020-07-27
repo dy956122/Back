@@ -57,6 +57,24 @@ public class Player : MonoBehaviour
 
     float scriptHp;
 
+
+    /// <summary>
+    /// 產生 鐮刀特效的物件
+    /// </summary>
+    public GameObject sickleEffectObj;
+
+    /// <summary>
+    /// 施放技能,產生的線圈
+    /// </summary>
+    public GameObject SkillObj;
+
+    /// <summary>
+    /// 使用技能的冷卻時間
+    /// </summary>
+    private float skillTimer = 3f;
+    public float _skillTimer { get => skillTimer; }
+
+
     #region 小紅帽物理特性
 
     /// <summary>
@@ -85,6 +103,10 @@ public class Player : MonoBehaviour
             else return false;
         }
     }
+
+
+
+
 
     #endregion 小紅帽物理特性 結束
 
@@ -138,14 +160,28 @@ public class Player : MonoBehaviour
 
     } // 移動功能 結束
 
-    /* public void LR_Attack()
-     {
-         if (Input.GetMouseButton(0))
-         {
-             // gameObject.GetComponent<Animator>().SetBool(1, true);
-             // GetComponent<Animator>().SetTrigger("Hurt");
-         }
-     }*/
+    public void LR_Attack()
+    {
+        if (Input.GetMouseButton(0))
+        {
+
+            // gameObject.GetComponent<Animator>().SetBool(1, true);
+            // GetComponent<Animator>().SetTrigger("Hurt");
+        }
+
+        // 按下滑鼠右鍵,產生鎖住大野狼的線圈
+        if (Input.GetMouseButton(2))
+        {
+            gameObject.GetComponent<Animator>().SetBool("Skill", true);
+            Instantiate(SkillObj,transform.position,Quaternion.identity);
+
+            /*if (_skillTimer -= 3f)
+            {
+
+            }*/
+
+        }
+    }
 
     public void LR_Hurt(float hurt)
     {
