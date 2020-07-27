@@ -7,11 +7,14 @@ public class MonsterCreater : MonoBehaviour
 
     void Update()
     {
-        Invoke("Create", 1);
+        // InvokeRepeating("Create", 1,2);
 
     }
 
 
+    /// <summary>
+    /// 創建 小怪
+    /// </summary>
     public void Create()
     {
         Instantiate(Voodoo, Vector3.zero, Quaternion.identity);
