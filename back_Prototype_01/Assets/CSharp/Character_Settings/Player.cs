@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 倒數計時的圖示
     /// </summary>
-    [Header("倒數計時的圖示"),Tooltip("倒數計時的圖示")]
+    [Header("倒數計時的圖示"), Tooltip("倒數計時的圖示")]
     public Image skillTimerCount;
 
 
@@ -123,6 +123,10 @@ public class Player : MonoBehaviour
     /// 小紅帽的角色本體
     /// </summary>
     private Rigidbody LR_rigibogy;
+    /// <summary>
+    /// 剛體
+    /// </summary>
+    private Rigidbody rig;
 
     /// <summary>
     /// 是否在森林地面上方
@@ -136,7 +140,6 @@ public class Player : MonoBehaviour
         }
     }
 
-
     #endregion 小紅帽物理特性 結束
 
 
@@ -146,47 +149,65 @@ public class Player : MonoBehaviour
 
     private void LR_Move() //移動功能
     {
+        
+            #region 角色移動(old)
+            /* float v = Input.GetAxis("Vertical"); // 前後移動
 
-        #region 角色移動
-        float v = Input.GetAxis("Vertical"); // 前後移動
+            float h = Input.GetAxis("Horizontal"); // 左右移動
 
-        float h = Input.GetAxis("Horizontal"); // 左右移動
+            // LR_rigibogy.AddForce(Cam.forward * walkSpeed * Mathf.Abs(v) + Cam.right * walkSpeed * Mathf.Abs(h));
 
-        // LR_rigibogy.AddForce(Cam.forward * walkSpeed * Mathf.Abs(v) + Cam.right * walkSpeed * Mathf.Abs(h));
+            // float x = Input.GetAxis("Mouse X");
+            // float y = Input.GetAxis("Mouse Y");
+            // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
 
-        // float x = Input.GetAxis("Mouse X");
-        // float y = Input.GetAxis("Mouse Y");
-        // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
+            // 前後推進
+            // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
 
-        // 前後推進
-        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
+            // 左右移動
+            // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
 
-        // 左右移動
-        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
+            // 原本的是長這樣
+            // LR_rigibogy.velocity = Vector3.forward * walkSpeed * Mathf.Abs(v) + Vector3.forward * walkSpeed * Mathf.Abs(h);
+            LR_rigibogy.velocity = Vector3.forward * walkSpeed * v + Vector3.right * walkSpeed * h;
 
-        // 原本的是長這樣
-        // LR_rigibogy.velocity = Vector3.forward * walkSpeed * Mathf.Abs(v) + Vector3.forward * walkSpeed * Mathf.Abs(h);
-        LR_rigibogy.velocity = Vector3.forward * walkSpeed * v + Vector3.right * walkSpeed * h;
+            #endregion 角色移動(old) 結束
 
-        #endregion 角色移動 結束
+            #region 角色轉向(old)
+            if (v == 1) angle = new Vector3(0, 0, 0);
+            else if (v == -1) angle = new Vector3(0, 180, 0);
+            else if (h == 1) angle = new Vector3(0, 90, 0);
+            else if (h == -1) angle = new Vector3(0, 270, 0);
 
-        #region 角色轉向
-        if (v == 1) angle = new Vector3(0, 0, 0);
-        else if (v == -1) angle = new Vector3(0, 180, 0);
-        else if (h == 1) angle = new Vector3(0, 90, 0);
-        else if (h == -1) angle = new Vector3(0, 270, 0);
+            // 八方轉向 測試中
+            else if (0 < h && 0 < v) angle = new Vector3(0, 45, 0);
+            else if (h < 0 && v < 1) angle = new Vector3(0, -45, 0);
+            else if (0 < h && v < 0) angle = new Vector3(0, 135, 0);
+            else if (h < 0 && v < 0) angle = new Vector3(0, -135, 0);
 
-        // 八方轉向 測試中
-        else if (0 < h && 0 < v) angle = new Vector3(0, 45, 0);
-        else if (h < 0 && v < 1) angle = new Vector3(0, -45, 0);
-        else if (0 < h && v < 0) angle = new Vector3(0, 135, 0);
-        else if (h < 0 && v < 0) angle = new Vector3(0, -135, 0);
+            transform.eulerAngles = angle;*/
+        #endregion 角色轉向(old) 結束
+    }
 
-        transform.eulerAngles = angle;
-        #endregion 角色轉向 結束
+    /// <summary>
+    /// 移動：八個方向
+    /// </summary>
+    private void Move()
+    {
+        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxis("Horizontal");
+
+        Vector3 movement = new Vector3(h, 0, v);
+
+        // 如果 按下移動鍵 角度 = 角度.插值(原本角度，要前往的方向角度，插值百分比)
+        if (h != 0 || v != 0) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
+
+        // 剛體.移動(原本座標 + 輸入的移動量 * 速度 * 1 / 60)
+        rig.MovePosition(transform.position + new Vector3(h, 0, v) * walkSpeed * Time.deltaTime);
+
+
 
         //GetComponent<Animator>().SetBool("LR_Walk", Mathf.Abs(v) > 0 || Mathf.Abs(v) > 0);
-
     } // 移動功能 結束
 
     public void LR_Attack()
@@ -226,7 +247,6 @@ public class Player : MonoBehaviour
         LR_MPBar.fillAmount = _scriptMp / LR_MP;
     }
 
-
     /// <summary>
     /// 一般結局(小紅帽變成狼人)
     /// </summary>
@@ -240,7 +260,10 @@ public class Player : MonoBehaviour
     /// </summary>
     private void GameOver1()
     {
-        SceneManager.LoadScene("GameOver1");
+        if (_scriptHp <= 0)
+        {
+            SceneManager.LoadScene("GameOver1");
+        }
     }
 
     /// <summary>
@@ -251,9 +274,15 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene("GameOver2");
     }
 
-    #endregion 方法結束
+    #endregion  方法結束
+
 
     #region 事件
+    private void Awake()
+    {
+        rig = GetComponent<Rigidbody>();
+    }
+
 
     void Start()
     {
@@ -266,6 +295,7 @@ public class Player : MonoBehaviour
     {
         LR_Move();
         // LR_Attack();
+        GameOver1();
     }
 }
 
