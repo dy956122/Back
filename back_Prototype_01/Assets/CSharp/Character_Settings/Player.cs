@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.ShaderGraph.Internal;
 
 public class Player : MonoBehaviour
 {
@@ -66,13 +67,6 @@ public class Player : MonoBehaviour
     public float _scriptMp { get => scriptMp; set => scriptMp = value; }
 
     /// <summary>
-    /// 倒數計時的圖示
-    /// </summary>
-    [Header("倒數計時的圖示"), Tooltip("倒數計時的圖示")]
-    public Image skillTimerCount;
-
-
-    /// <summary>
     /// 產生 鐮刀特效的物件
     /// </summary>
     // public GameObject sickleEffectObj;
@@ -93,13 +87,13 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 使用技能的冷卻時間(分子)
     /// </summary>
-    private float skillTimer = 3f;
+    private float skillTimer = 0f;
     public float _skillTimer { get => skillTimer; set => skillTimer = value; }
 
     /// <summary>
     /// 使用技能的冷卻時間(分母)
     /// </summary>
-    private float SkillerTimer;
+    private float SkillTimer;
 
     #endregion 技能倒數計時 結束
 
@@ -146,48 +140,48 @@ public class Player : MonoBehaviour
     #endregion 基礎欄位與屬性 結束
 
     #region 方法
-
+    #region 角色移動(old)
     private void LR_Move() //移動功能
     {
-        
-            #region 角色移動(old)
-            /* float v = Input.GetAxis("Vertical"); // 前後移動
 
-            float h = Input.GetAxis("Horizontal"); // 左右移動
 
-            // LR_rigibogy.AddForce(Cam.forward * walkSpeed * Mathf.Abs(v) + Cam.right * walkSpeed * Mathf.Abs(h));
+        /* float v = Input.GetAxis("Vertical"); // 前後移動
 
-            // float x = Input.GetAxis("Mouse X");
-            // float y = Input.GetAxis("Mouse Y");
-            // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
+        float h = Input.GetAxis("Horizontal"); // 左右移動
 
-            // 前後推進
-            // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
+        // LR_rigibogy.AddForce(Cam.forward * walkSpeed * Mathf.Abs(v) + Cam.right * walkSpeed * Mathf.Abs(h));
 
-            // 左右移動
-            // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
+        // float x = Input.GetAxis("Mouse X");
+        // float y = Input.GetAxis("Mouse Y");
+        // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
 
-            // 原本的是長這樣
-            // LR_rigibogy.velocity = Vector3.forward * walkSpeed * Mathf.Abs(v) + Vector3.forward * walkSpeed * Mathf.Abs(h);
-            LR_rigibogy.velocity = Vector3.forward * walkSpeed * v + Vector3.right * walkSpeed * h;
+        // 前後推進
+        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
 
-            #endregion 角色移動(old) 結束
+        // 左右移動
+        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
 
-            #region 角色轉向(old)
-            if (v == 1) angle = new Vector3(0, 0, 0);
-            else if (v == -1) angle = new Vector3(0, 180, 0);
-            else if (h == 1) angle = new Vector3(0, 90, 0);
-            else if (h == -1) angle = new Vector3(0, 270, 0);
+        // 原本的是長這樣
+        // LR_rigibogy.velocity = Vector3.forward * walkSpeed * Mathf.Abs(v) + Vector3.forward * walkSpeed * Mathf.Abs(h);
+        LR_rigibogy.velocity = Vector3.forward * walkSpeed * v + Vector3.right * walkSpeed * h;
 
-            // 八方轉向 測試中
-            else if (0 < h && 0 < v) angle = new Vector3(0, 45, 0);
-            else if (h < 0 && v < 1) angle = new Vector3(0, -45, 0);
-            else if (0 < h && v < 0) angle = new Vector3(0, 135, 0);
-            else if (h < 0 && v < 0) angle = new Vector3(0, -135, 0);
+        #endregion 角色移動(old) 結束
 
-            transform.eulerAngles = angle;*/
-        #endregion 角色轉向(old) 結束
+        #region 角色轉向(old)
+        if (v == 1) angle = new Vector3(0, 0, 0);
+        else if (v == -1) angle = new Vector3(0, 180, 0);
+        else if (h == 1) angle = new Vector3(0, 90, 0);
+        else if (h == -1) angle = new Vector3(0, 270, 0);
+
+        // 八方轉向 測試中
+        else if (0 < h && 0 < v) angle = new Vector3(0, 45, 0);
+        else if (h < 0 && v < 1) angle = new Vector3(0, -45, 0);
+        else if (0 < h && v < 0) angle = new Vector3(0, 135, 0);
+        else if (h < 0 && v < 0) angle = new Vector3(0, -135, 0);
+
+        transform.eulerAngles = angle;*/
     }
+    #endregion 角色轉向(old) 結束
 
     /// <summary>
     /// 移動：八個方向
@@ -215,15 +209,15 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
 
-            // gameObject.GetComponent<Animator>().SetBool(1, true);
+            // GetComponent<Animator>().SetBool(1, true);
             // GetComponent<Animator>().SetTrigger("Hurt");
         }
 
         // 按下滑鼠右鍵,產生鎖住大野狼的線圈
         if (Input.GetMouseButton(2))
         {
-            _skillTimer -= 3f;                                                     // 扣除 3秒
-            gameObject.GetComponent<Animator>().SetBool("Skill", true);
+            GetComponent<Animator>().SetBool("Skill", true);
+            TimeCountAdd();
             // Instantiate(SkillObj,transform.position,Quaternion.identity);
 
             /*if (_skillTimer -= 3f)
@@ -248,6 +242,34 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// 發動技能時,倒數直接從 3 開始
+    /// </summary>
+    public void TimeCountAdd()
+    {
+        // 分子直接加 3 秒
+        _skillTimer += 3f;
+        skillTimerImage.fillAmount = _skillTimer / SkillTimer;
+    }
+
+    /// <summary>
+    /// 倒數計時變成3時, 隨時間減少,直到0為止
+    /// </summary>
+    public void TimeCountMinus()
+    {
+        // print("OK");
+        _skillTimer -= 1f ;
+        skillTimerImage.fillAmount = _skillTimer / SkillTimer;
+
+        /*if (0 <= _skillTimer )
+        {
+            _skillTimer -= Time.deltaTime * 1f;
+            skillTimerImage.fillAmount = _skillTimer / SkillTimer;
+        }*/
+    }
+
+
+
+    /// <summary>
     /// 一般結局(小紅帽變成狼人)
     /// </summary>
     private void NormalScequence()
@@ -256,9 +278,9 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
-    /// 小紅帽被小怪打倒,等待susan的動畫(看看要不要先試試看)
+    /// 小紅帽被小怪打倒(已銜接),最後由狼人那邊呼叫
     /// </summary>
-    private void GameOver1()
+    public void GameOver1()
     {
         if (_scriptHp <= 0)
         {
@@ -276,7 +298,6 @@ public class Player : MonoBehaviour
 
     #endregion  方法結束
 
-
     #region 事件
     private void Awake()
     {
@@ -293,11 +314,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        LR_Move();
+        Move();
         // LR_Attack();
         GameOver1();
     }
+
+    #endregion 事件 結束
 }
 
-#endregion 事件 結束
+
 
