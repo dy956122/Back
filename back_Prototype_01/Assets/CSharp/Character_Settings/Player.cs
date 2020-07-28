@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,7 +18,7 @@ public class Player : MonoBehaviour
     /// </summary>
     [Header("小紅帽的體力值"), Tooltip("體力值")]
     [Range(1, 10)]
-    public float MP = 4;
+    public float LR_MP = 4;
 
     /// <summary>
     /// 小紅帽的攻擊力
@@ -47,7 +45,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 小紅帽走路聲
     /// </summary>
-    public AudioClip redWalkSound;
+    // public AudioClip redWalkSound;
 
     /// <summary>
     /// 小紅帽HP槽
@@ -56,24 +54,58 @@ public class Player : MonoBehaviour
     public Image LR_HPBar;
 
     float scriptHp;
+    public float _scriptHp { get => scriptHp; set => scriptHp = value; }
+
+    /// <summary>
+    /// 小紅帽 MP槽
+    /// </summary>
+    [Header("小紅帽MP槽")]
+    public Image LR_MPBar;
+
+    float scriptMp = 4;
+    public float _scriptMp { get => scriptMp; set => scriptMp = value; }
+
+    /// <summary>
+    /// 倒數計時的圖示
+    /// </summary>
+    [Header("倒數計時的圖示"),Tooltip("倒數計時的圖示")]
+    public Image skillTimerCount;
 
 
     /// <summary>
     /// 產生 鐮刀特效的物件
     /// </summary>
-    public GameObject sickleEffectObj;
+    // public GameObject sickleEffectObj;
 
     /// <summary>
     /// 施放技能,產生的線圈
     /// </summary>
-    public GameObject SkillObj;
+    // public GameObject SkillObj;
+
+
+    #region 技能倒數計時
+
+    [Header("技能倒數的物件")]
+    public Image skillTimerImage;
+
+    private bool isSkill;
 
     /// <summary>
-    /// 使用技能的冷卻時間
+    /// 使用技能的冷卻時間(分子)
     /// </summary>
     private float skillTimer = 3f;
-    public float _skillTimer { get => skillTimer; }
+    public float _skillTimer { get => skillTimer; set => skillTimer = value; }
 
+    /// <summary>
+    /// 使用技能的冷卻時間(分母)
+    /// </summary>
+    private float SkillerTimer;
+
+    #endregion 技能倒數計時 結束
+
+
+    // 使用GameManager管理數值及劇情
+    public GameManager GM;
 
     #region 小紅帽物理特性
 
@@ -103,9 +135,6 @@ public class Player : MonoBehaviour
             else return false;
         }
     }
-
-
-
 
 
     #endregion 小紅帽物理特性 結束
@@ -147,7 +176,7 @@ public class Player : MonoBehaviour
         else if (h == 1) angle = new Vector3(0, 90, 0);
         else if (h == -1) angle = new Vector3(0, 270, 0);
 
-
+        // 八方轉向 測試中
         else if (0 < h && 0 < v) angle = new Vector3(0, 45, 0);
         else if (h < 0 && v < 1) angle = new Vector3(0, -45, 0);
         else if (0 < h && v < 0) angle = new Vector3(0, 135, 0);
@@ -172,8 +201,9 @@ public class Player : MonoBehaviour
         // 按下滑鼠右鍵,產生鎖住大野狼的線圈
         if (Input.GetMouseButton(2))
         {
+            _skillTimer -= 3f;                                                     // 扣除 3秒
             gameObject.GetComponent<Animator>().SetBool("Skill", true);
-            Instantiate(SkillObj,transform.position,Quaternion.identity);
+            // Instantiate(SkillObj,transform.position,Quaternion.identity);
 
             /*if (_skillTimer -= 3f)
             {
@@ -185,7 +215,40 @@ public class Player : MonoBehaviour
 
     public void LR_Hurt(float hurt)
     {
-        LR_HP -= hurt;
+        _scriptHp -= hurt;
+        LR_HPBar.fillAmount = _scriptHp / LR_HP;
+        //gameObject.GetComponent<Animator>().SetTrigger("Hurt");
+    }
+
+    public void UseSkill(float Consume)
+    {
+        _scriptMp -= Consume;
+        LR_MPBar.fillAmount = _scriptMp / LR_MP;
+    }
+
+
+    /// <summary>
+    /// 一般結局(小紅帽變成狼人)
+    /// </summary>
+    private void NormalScequence()
+    {
+        SceneManager.LoadScene("NormalScequence");
+    }
+
+    /// <summary>
+    /// 小紅帽被小怪打倒,等待susan的動畫(看看要不要先試試看)
+    /// </summary>
+    private void GameOver1()
+    {
+        SceneManager.LoadScene("GameOver1");
+    }
+
+    /// <summary>
+    /// 小紅帽被大野狼給劇情殺,等待susan的動畫
+    /// </summary>
+    private void GameOver2()
+    {
+        SceneManager.LoadScene("GameOver2");
     }
 
     #endregion 方法結束
@@ -195,7 +258,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         LR_rigibogy = GetComponent<Rigidbody>();
-        scriptHp = LR_HP;
+        _scriptHp = LR_HP;
+        _scriptMp = LR_MP;
     }
 
     private void Update()

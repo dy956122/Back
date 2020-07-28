@@ -2,13 +2,19 @@
 
 public class MonsterCreater : MonoBehaviour
 {
+    /// <summary>
+    /// 創建小怪
+    /// </summary>
     public GameObject Voodoo;
-    public GameObject CreaterPonit;
+
+    /// <summary>
+    /// 生怪點
+    /// </summary>
+    public GameObject[] CreaterPonit;
 
     void Update()
     {
         // InvokeRepeating("Create", 1,2);
-
     }
 
 
