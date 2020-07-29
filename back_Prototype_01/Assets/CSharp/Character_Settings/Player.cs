@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     #region 基礎欄位與屬性
 
+    #region 小紅帽的基礎能力值
     /// <summary>
     /// 小紅帽的生命值
     /// </summary>
@@ -66,6 +67,8 @@ public class Player : MonoBehaviour
     float scriptMp = 4;
     public float _scriptMp { get => scriptMp; set => scriptMp = value; }
 
+    #endregion 小紅帽的基礎能力值 結束
+
     /// <summary>
     /// 產生 鐮刀特效的物件
     /// </summary>
@@ -75,7 +78,6 @@ public class Player : MonoBehaviour
     /// 施放技能,產生的線圈
     /// </summary>
     // public GameObject SkillObj;
-
 
     #region 技能倒數計時
 
@@ -96,10 +98,6 @@ public class Player : MonoBehaviour
     private float SkillTimer;
 
     #endregion 技能倒數計時 結束
-
-
-    // 使用GameManager管理數值及劇情
-    public GameManager GM;
 
     #region 小紅帽物理特性
 
@@ -136,52 +134,18 @@ public class Player : MonoBehaviour
 
     #endregion 小紅帽物理特性 結束
 
+    // 使用GameManager管理數值及劇情
+    // 主要用來呼叫 GM 紀錄取得 聖骸的數量
+    // 然後取得 一定數量後, 讓小紅帽碰到中央場景,觸發變人事件
+    // 控制 小紅帽未收集 全部道具, 但是在路途中被小怪殺死的結局
+    // 或是 小紅帽收集全部聖骸, 但是被大野狼打到,觸發第二結局
+    // 最後是, 如果滿血打倒大野狼了, 觸發 完美結局專用
+    public GameManager GM;
+
 
     #endregion 基礎欄位與屬性 結束
 
     #region 方法
-    #region 角色移動(old)
-    private void LR_Move() //移動功能
-    {
-
-
-        /* float v = Input.GetAxis("Vertical"); // 前後移動
-
-        float h = Input.GetAxis("Horizontal"); // 左右移動
-
-        // LR_rigibogy.AddForce(Cam.forward * walkSpeed * Mathf.Abs(v) + Cam.right * walkSpeed * Mathf.Abs(h));
-
-        // float x = Input.GetAxis("Mouse X");
-        // float y = Input.GetAxis("Mouse Y");
-        // Cam.Rotate(y * RotateCam, RotateCam * x, 0);
-
-        // 前後推進
-        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(v));
-
-        // 左右移動
-        // LR_rigibogy.AddForce(transform.forward * walkSpeed * Mathf.Abs(h));
-
-        // 原本的是長這樣
-        // LR_rigibogy.velocity = Vector3.forward * walkSpeed * Mathf.Abs(v) + Vector3.forward * walkSpeed * Mathf.Abs(h);
-        LR_rigibogy.velocity = Vector3.forward * walkSpeed * v + Vector3.right * walkSpeed * h;
-
-        #endregion 角色移動(old) 結束
-
-        #region 角色轉向(old)
-        if (v == 1) angle = new Vector3(0, 0, 0);
-        else if (v == -1) angle = new Vector3(0, 180, 0);
-        else if (h == 1) angle = new Vector3(0, 90, 0);
-        else if (h == -1) angle = new Vector3(0, 270, 0);
-
-        // 八方轉向 測試中
-        else if (0 < h && 0 < v) angle = new Vector3(0, 45, 0);
-        else if (h < 0 && v < 1) angle = new Vector3(0, -45, 0);
-        else if (0 < h && v < 0) angle = new Vector3(0, 135, 0);
-        else if (h < 0 && v < 0) angle = new Vector3(0, -135, 0);
-
-        transform.eulerAngles = angle;*/
-    }
-    #endregion 角色轉向(old) 結束
 
     /// <summary>
     /// 移動：八個方向
