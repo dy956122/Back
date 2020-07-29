@@ -58,30 +58,27 @@ public class GameManager : MonoBehaviour
     /// 會被聖骸腳本呼叫的參數,因此聖骸的腳本裡面也需要一個 GM
     /// 如果玩家撿到聖骸,聖骸的腳本會呼叫此指令
     /// </summary>
-    public /* 先用按鈕測試會不會有效果 */ /* private */ void CollectSkullNum()
+    public void CollectSkullNum()
     {
         skullNum++;
         skull[skullNum -1 ].SetActive(true);
-
         print(skullNum);
-
-        /*for (int i = skullNum; i < skull.Length; i++)
-        {
-            skull[i].SetActive(true);
-        }*/
     }
 
-    [Header("啟動 劇情畫面")]
-    public GameObject Story_TurnHuman;
+   // [Header("啟動 小紅帽變回人形的劇情畫面")]
+   // public GameObject Story_TurnHuman;
 
 
+   /// <summary>
+   /// 想要藉由達到一定數量之後,呼叫破關之類的場景
+   /// </summary>
     private void FinalStory()
     {
         if (skullNum == 7)
         {
             if (true)
             {
-
+                
             }
         }
     }
@@ -94,9 +91,5 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         SettingButtonControl();
-        
     }
-
-
-
 }
