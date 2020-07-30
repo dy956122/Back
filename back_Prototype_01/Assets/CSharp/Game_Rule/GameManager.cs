@@ -46,13 +46,14 @@ public class GameManager : MonoBehaviour
     /// 聖骸圖像顯示
     /// </summary>
     [Header("聖骸圖像顯示"), Tooltip("聖骸圖像顯示")]
-    public GameObject[] skull;
+    [SerializeField]
+    private GameObject[] skull;
 
     /// <summary>
     /// 聖骸數量累計
     /// </summary>
     [Header("聖骸數量累計"), Tooltip("聖骸數量累計")]
-    public int skullNum = 0;
+    private int skullNum = 0;
 
     /// <summary>
     /// 會被聖骸腳本呼叫的參數,因此聖骸的腳本裡面也需要一個 GM
@@ -61,35 +62,47 @@ public class GameManager : MonoBehaviour
     public void CollectSkullNum()
     {
         skullNum++;
-        skull[skullNum -1 ].SetActive(true);
+        skull[skullNum - 1].SetActive(true);
         print(skullNum);
     }
 
-   // [Header("啟動 小紅帽變回人形的劇情畫面")]
-   // public GameObject Story_TurnHuman;
+    [Header("啟動 小紅帽變回人形的劇情畫面")]
+    [SerializeField]
+    private GameObject story_ReturnHuman;
 
 
-   /// <summary>
-   /// 想要藉由達到一定數量之後,呼叫破關之類的場景
-   /// </summary>
+    /// <summary>
+    /// 想要藉由達到一定數量之後,呼叫破關之類的場景
+    /// 其中要追加 分別事件, 此段寫在update會一直呼叫,所以圖會變成永遠開啟
+    /// </summary>
     private void FinalStory()
     {
-        if (skullNum == 7)
+       if (skullNum == 7)
         {
-            if (true)
-            {
-                
-            }
+            story_ReturnHuman.SetActive(true);
+            skullNum++; // 讓數量變為8,那麼在Update裡面會因為數量不為7,而中斷此段程式碼
+            print(skullNum);
+            /* if (true)
+             {
+
+             }*/
         }
+    }
+
+    /// <summary>
+    /// 關閉劇情圖片
+    /// </summary>
+    public void CloseStoryImage(GameObject CloseThing)
+    {
+        CloseThing.SetActive(false);
     }
 
     #endregion  聖骸圖像顯示專用 結束
 
 
-
-
     private void Update()
     {
         SettingButtonControl();
+        FinalStory();
     }
 }

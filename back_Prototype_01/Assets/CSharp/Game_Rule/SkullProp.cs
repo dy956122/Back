@@ -31,7 +31,7 @@ public class SkullProp : MonoBehaviour
     private void OnTriggerEnter(Collider collet)
     {
         GM.CollectSkullNum();
-        Destroy(gameObject, 2);
+        Destroy(gameObject);
     }
 
 }
