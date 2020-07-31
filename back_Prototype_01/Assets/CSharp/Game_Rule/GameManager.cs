@@ -61,8 +61,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void CollectSkullNum()
     {
+        skull[skullNum].SetActive(true);
         skullNum++;
-        skull[skullNum - 1].SetActive(true);
         print(skullNum);
     }
 
