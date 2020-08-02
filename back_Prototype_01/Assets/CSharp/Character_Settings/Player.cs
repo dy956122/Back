@@ -163,19 +163,21 @@ public class Player : MonoBehaviour
         // 剛體.移動(原本座標 + 輸入的移動量 * 速度 * 1 / 60)
         rig.MovePosition(transform.position + new Vector3(h, 0, v) * walkSpeed * Time.deltaTime);
 
-
-
-        //GetComponent<Animator>().SetBool("LR_Walk", Mathf.Abs(v) > 0 || Mathf.Abs(v) > 0);
+        GetComponent<Animator>().SetBool("Walk", Mathf.Abs(v) > 0 || Mathf.Abs(v) > 0);
     } // 移動功能 結束
 
     public void LR_Attack()
     {
         if (Input.GetMouseButton(0))
         {
-
-            // GetComponent<Animator>().SetBool(1, true);
+            GetComponent<Animator>().SetBool("Att", true);
             // GetComponent<Animator>().SetTrigger("Hurt");
         }
+        else
+        {
+            GetComponent<Animator>().SetBool("Att", false);
+        }
+
 
         // 按下滑鼠右鍵,產生鎖住大野狼的線圈
         if (Input.GetMouseButton(2))
@@ -221,7 +223,7 @@ public class Player : MonoBehaviour
     public void TimeCountMinus()
     {
         // print("OK");
-        _skillTimer -= 1f ;
+        _skillTimer -= 1f;
         skillTimerImage.fillAmount = _skillTimer / SkillTimer;
 
         /*if (0 <= _skillTimer )
@@ -279,7 +281,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Move();
-        // LR_Attack();
+        LR_Attack();
         GameOver1();
     }
 
