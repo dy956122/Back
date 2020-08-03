@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 使用技能的冷卻時間(分母)
     /// </summary>
-    private float SkillTimer;
+    private float SkillTimer = 3f;
 
     #endregion 技能倒數計時 結束
 
@@ -163,6 +163,7 @@ public class Player : MonoBehaviour
         rig.MovePosition(transform.position + new Vector3(h, 0, v) * walkSpeed * Time.deltaTime);
 
         GetComponent<Animator>().SetBool("Walk", Mathf.Abs(v) > 0 || Mathf.Abs(v) > 0);
+        // 此段動畫會有問題
     } // 移動功能 結束
 
     /// <summary>
@@ -171,28 +172,25 @@ public class Player : MonoBehaviour
     public void LR_Attack()
     {
         // 按下滑鼠左鍵
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Animator>().SetBool("Att", true);
-            // GetComponent<Animator>().SetTrigger("Hurt");
+            GetComponent<Animator>().SetBool("Att", true);  // 普通攻擊
+            GetComponent<Animator>().speed = 3f;            // 讓速度調快3倍
+            UseSkill(1);                                    // 扣除 1 點體力值
         }
         else
         {
             GetComponent<Animator>().SetBool("Att", false);
+            // GetComponent<Animator>().speed = 1f;
         }
 
 
         // 按下滑鼠右鍵,產生鎖住大野狼的線圈
-        if (Input.GetMouseButton(2))
+        if (Input.GetMouseButtonDown(1))
         {
-            GetComponent<Animator>().SetBool("Skill", true);
+            // GetComponent<Animator>().SetBool("Skill", true); // 施放技能的動畫還沒有處理好
             TimeCountAdd();
             // Instantiate(SkillObj,transform.position,Quaternion.identity);
-
-            /*if (_skillTimer -= 3f)
-            {
-
-            }*/
 
         }
     }
@@ -209,7 +207,7 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
-    /// 使用攻擊後的狀態
+    /// 使用攻擊後的狀態,現階段用按鈕暫時呼叫測試,OK了再改 private(以下時間倒數計時都一樣)
     /// </summary>
     /// <param name="Consume"></param>
     public void UseSkill(float Consume)
@@ -219,13 +217,28 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
+    /// 體力值若小於4, 會隨著時間經過回復
+    /// </summary>
+    private void SkillFiller()
+    {
+        if (_scriptMp < 4f)
+        {
+            _scriptMp += 0.5f * Time.deltaTime;
+            LR_MPBar.fillAmount = _scriptMp / LR_MP;        // 必須加此段,不然會沒有體力填充的動畫去跑
+        }
+    }
+
+    /// <summary>
     /// 發動技能時,倒數直接從 3 開始
     /// </summary>
     public void TimeCountAdd()
     {
-        // 分子直接加 3 秒
-        _skillTimer += 3f;
-        skillTimerImage.fillAmount = _skillTimer / SkillTimer;
+        // 如果倒數計時小於等於0秒時
+        if(_skillTimer <= 0f)
+        {
+            _skillTimer += 3f;                                          // 秒數直接加 3 秒
+            skillTimerImage.fillAmount = _skillTimer / SkillTimer;
+        }
     }
 
     /// <summary>
@@ -233,15 +246,11 @@ public class Player : MonoBehaviour
     /// </summary>
     public void TimeCountMinus()
     {
-        // print("OK");
-        _skillTimer -= 1f;
-        skillTimerImage.fillAmount = _skillTimer / SkillTimer;
-
-        /*if (0 <= _skillTimer )
+        if (_skillTimer >= 0f && _skillTimer < 3f)
         {
             _skillTimer -= Time.deltaTime * 1f;
             skillTimerImage.fillAmount = _skillTimer / SkillTimer;
-        }*/
+        }
     }
 
     #endregion 基本操作 結束
@@ -310,11 +319,10 @@ public class Player : MonoBehaviour
     {
         Move();
         LR_Attack();
-        GameOver1();    // 最後由狼人那邊呼叫
+        GameOver1();    // 最後由狼人那邊呼叫,因此此段可以刪除
+        SkillFiller();
+        TimeCountMinus();
     }
 
     #endregion 事件 結束
 }
-
-
-
