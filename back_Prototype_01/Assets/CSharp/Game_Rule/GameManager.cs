@@ -70,14 +70,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject story_ReturnHuman;
 
-
     /// <summary>
     /// 想要藉由達到一定數量之後,呼叫破關之類的場景
     /// 其中要追加 分別事件, 此段寫在update會一直呼叫,所以圖會變成永遠開啟
     /// </summary>
     private void FinalStory()
     {
-       if (skullNum == 7)
+        if (skullNum == 7)
         {
             story_ReturnHuman.SetActive(true);
             skullNum++; // 讓數量變為8,那麼在Update裡面會因為數量不為7,而中斷此段程式碼
