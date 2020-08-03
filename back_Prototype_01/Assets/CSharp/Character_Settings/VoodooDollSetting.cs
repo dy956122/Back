@@ -87,16 +87,6 @@ public class VoodooDollSetting : MonoBehaviour
 
     #region 設定方法
 
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        Dead();
-    }
-
     /// <summary>
     /// 怪物攻擊
     /// </summary>
@@ -148,9 +138,12 @@ public class VoodooDollSetting : MonoBehaviour
             GetComponent<Collider>().enabled = false;   // 怪物碰撞器關閉
             Destroy(gameObject, 2);                     // 兩秒後刪除怪物
 
-            PropDrop();                                 // 呼叫產生道具的方法(在上方)
+            // GameObject.Find("MonsterCreaterGroup").GetComponent<MonsterCreater>().MonsterNum--; // 因為是預製物,所以只能使用這方法來讓小怪找到MonsterCreaterGroup
+
+            //PropDrop();                                 // 呼叫產生道具的方法(在下方)
         }
     }
+
 
     /// <summary>
     /// 掉落道具
@@ -158,7 +151,7 @@ public class VoodooDollSetting : MonoBehaviour
     protected virtual void PropDrop()
     {
         // 如果掉落機率 大於 0.7
-        if ((Random.Range(0, dropProbability) / DropProbability) > 0.7f)
+        if ((Random.Range(0, dropProbability) / DropProbability) > 0.3f)
         {
             // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)
             Instantiate(dropThing, transform.position, Quaternion.identity);
@@ -194,5 +187,18 @@ public class VoodooDollSetting : MonoBehaviour
         gameObject.GetComponent<Animator>().SetBool("Att", false); ; 
 
     }
+
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+        Dead();
+    }
+
+
     #endregion 設定方法 結束
 }

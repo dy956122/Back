@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     // 使用GameManager管理數值及劇情
     // 主要用來呼叫 GM 紀錄取得 聖骸的數量
-    // 然後取得 一定數量後, 讓小紅帽碰到中央場景,觸發變人事件
+    // 然後取得一定數量的聖骸後, 讓小紅帽碰到中央場景,觸發變人事件
     // 控制 小紅帽未收集 全部道具, 但是在路途中被小怪殺死的結局
     // 或是 小紅帽收集全部聖骸, 但是被大野狼打到,觸發第二結局
     // 最後是, 如果滿血打倒大野狼了, 觸發 完美結局專用
@@ -41,12 +41,11 @@ public class GameManager : MonoBehaviour
 
     #endregion 介面視窗顯示專用
 
-    #region 聖骸圖像顯示專用
+    #region 聖骸相關數值與方法
     /// <summary>
     /// 聖骸圖像顯示
     /// </summary>
-    [Header("聖骸圖像顯示"), Tooltip("聖骸圖像顯示")]
-    [SerializeField]
+    [Header("聖骸圖像顯示"), Tooltip("聖骸圖像顯示"), SerializeField]
     private GameObject[] skull;
 
     /// <summary>
@@ -74,17 +73,13 @@ public class GameManager : MonoBehaviour
     /// 想要藉由達到一定數量之後,呼叫破關之類的場景
     /// 其中要追加 分別事件, 此段寫在update會一直呼叫,所以圖會變成永遠開啟
     /// </summary>
-    private void FinalStory()
+    public void ReturnHumanEvent()
     {
         if (skullNum == 7)
         {
-            story_ReturnHuman.SetActive(true);
-            skullNum++; // 讓數量變為8,那麼在Update裡面會因為數量不為7,而中斷此段程式碼
+            story_ReturnHuman.SetActive(true);      // 開啟 相關UI
+            skullNum++;                             // 讓數量變為8,那麼在Update裡面會因為數量不為7,而中斷此段程式碼
             print(skullNum);
-            /* if (true)
-             {
-
-             }*/
         }
     }
 
@@ -96,12 +91,10 @@ public class GameManager : MonoBehaviour
         CloseThing.SetActive(false);
     }
 
-    #endregion  聖骸圖像顯示專用 結束
-
-
+    #endregion  聖骸相關數值與方法 結束
+   
     private void Update()
     {
         SettingButtonControl();
-        FinalStory();
     }
 }

@@ -111,14 +111,12 @@ public class Player : MonoBehaviour
     // private Transform Cam;
     // private float RotateCam = 5.0f;
 
+
     /// <summary>
-    /// 小紅帽的角色本體
-    /// </summary>
-    private Rigidbody LR_rigibogy;
-    /// <summary>
-    /// 剛體
+    /// 小紅帽的角色本體(剛體)
     /// </summary>
     private Rigidbody rig;
+
 
     /// <summary>
     /// 是否在森林地面上方
@@ -147,6 +145,7 @@ public class Player : MonoBehaviour
 
     #region 方法
 
+    #region 基本操作
     /// <summary>
     /// 移動：八個方向
     /// </summary>
@@ -166,8 +165,12 @@ public class Player : MonoBehaviour
         GetComponent<Animator>().SetBool("Walk", Mathf.Abs(v) > 0 || Mathf.Abs(v) > 0);
     } // 移動功能 結束
 
+    /// <summary>
+    /// 攻擊的方法
+    /// </summary>
     public void LR_Attack()
     {
+        // 按下滑鼠左鍵
         if (Input.GetMouseButton(0))
         {
             GetComponent<Animator>().SetBool("Att", true);
@@ -194,6 +197,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 受傷的方法
+    /// </summary>
+    /// <param name="hurt"></param>
     public void LR_Hurt(float hurt)
     {
         _scriptHp -= hurt;
@@ -201,6 +208,10 @@ public class Player : MonoBehaviour
         //gameObject.GetComponent<Animator>().SetTrigger("Hurt");
     }
 
+    /// <summary>
+    /// 使用攻擊後的狀態
+    /// </summary>
+    /// <param name="Consume"></param>
     public void UseSkill(float Consume)
     {
         _scriptMp -= Consume;
@@ -233,14 +244,30 @@ public class Player : MonoBehaviour
         }*/
     }
 
+    #endregion 基本操作 結束
 
+    #region 呼叫各結局
+    /// <summary>
+    /// 完美結局(小紅帽平安回到奶奶家)
+    /// </summary>
+    private void HappyScequence()
+    {
+        if (_scriptHp == LR_HP)
+        {
+            //SceneManager.LoadScene("NormalScequence");
+        }
+    }
 
     /// <summary>
     /// 一般結局(小紅帽變成狼人)
     /// </summary>
     private void NormalScequence()
     {
-        SceneManager.LoadScene("NormalScequence");
+
+        if (_scriptHp < LR_HP)
+        {
+            SceneManager.LoadScene("NormalScequence");
+        }
     }
 
     /// <summary>
@@ -255,12 +282,14 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
-    /// 小紅帽被大野狼給劇情殺,等待susan的動畫
+    /// 小紅帽被大野狼給劇情殺,因為要別的場景呼叫,所以需要改成 public(等待susan的動畫)
     /// </summary>
-    private void GameOver2()
+    public void GameOver2()
     {
         SceneManager.LoadScene("GameOver2");
     }
+
+    #endregion 呼叫各結局 結束
 
     #endregion  方法結束
 
@@ -270,10 +299,9 @@ public class Player : MonoBehaviour
         rig = GetComponent<Rigidbody>();
     }
 
-
     void Start()
     {
-        LR_rigibogy = GetComponent<Rigidbody>();
+        rig = GetComponent<Rigidbody>();
         _scriptHp = LR_HP;
         _scriptMp = LR_MP;
     }
@@ -282,7 +310,7 @@ public class Player : MonoBehaviour
     {
         Move();
         LR_Attack();
-        GameOver1();
+        GameOver1();    // 最後由狼人那邊呼叫
     }
 
     #endregion 事件 結束
