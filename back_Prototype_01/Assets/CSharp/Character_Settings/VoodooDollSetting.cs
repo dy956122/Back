@@ -150,7 +150,7 @@ public class VoodooDollSetting : MonoBehaviour
     /// </summary>
     protected virtual void PropDrop()
     {
-        // 如果掉落機率 大於 0.7
+        // 如果掉落機率 大於 0.3
         if ((Random.Range(0, dropProbability) / DropProbability) > 0.3f)
         {
             // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor.ShaderGraph.Internal;
+// using UnityEditor.ShaderGraph.Internal;
 
 public class Player : MonoBehaviour
 {
@@ -175,13 +175,13 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Animator>().SetBool("Att", true);  // 普通攻擊
-            GetComponent<Animator>().speed = 3f;            // 讓速度調快3倍
+            //GetComponent<Animator>().speed = 3f;            // 讓速度調快3倍
             UseSkill(1);                                    // 扣除 1 點體力值
         }
         else
         {
             GetComponent<Animator>().SetBool("Att", false);
-            // GetComponent<Animator>().speed = 1f;
+            //GetComponent<Animator>().speed = 1f;
         }
 
 
