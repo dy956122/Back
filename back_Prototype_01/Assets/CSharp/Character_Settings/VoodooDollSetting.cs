@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using UnityEngine.AI;                   // 使用Navigation
 
 using UnityEngine;
 
