@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Music
   - Voodoo
+  - MiniCamCollider
   layers:
   - Default
   - TransparentFX
