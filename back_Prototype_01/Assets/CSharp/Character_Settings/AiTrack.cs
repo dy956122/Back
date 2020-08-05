@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class AiTrack : MonoBehaviour
 {
+    // 使用navigation來寫的,但這是copy老師之前寫的殭屍
     [Header("移送速度"), Range(0, 10)]
     public float speed = 1.5f;
 

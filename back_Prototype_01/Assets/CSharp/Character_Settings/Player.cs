@@ -3,6 +3,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 // using UnityEditor.ShaderGraph.Internal;
 
+// 小紅帽的滑鼠右鍵攻擊還要寫入bool 函數,來控制關閉
+
+
 public class Player : MonoBehaviour
 {
     #region 基礎欄位與屬性
@@ -175,13 +178,17 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Animator>().SetBool("Att", true);  // 普通攻擊
-            //GetComponent<Animator>().speed = 3f;            // 讓速度調快3倍
             UseSkill(1);                                    // 扣除 1 點體力值
+
+            // 如果 MP 值 小於等於 0,就暫時不能攻擊
+            if (scriptMp <= 0f)
+            {
+                
+            }
         }
         else
         {
             GetComponent<Animator>().SetBool("Att", false);
-            //GetComponent<Animator>().speed = 1f;
         }
 
 

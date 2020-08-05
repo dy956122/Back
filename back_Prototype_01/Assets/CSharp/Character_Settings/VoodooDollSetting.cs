@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using UnityEngine.AI;                   // 使用Navigation
+﻿using UnityEngine.AI;                   // 使用Navigation
 
 using UnityEngine;
+    // 還有東西要修正,像是追蹤功能要處理
 
 public class VoodooDollSetting : MonoBehaviour
 {
+
     #region 設定基礎欄位
 
     #region 設定基礎數值
@@ -15,14 +14,14 @@ public class VoodooDollSetting : MonoBehaviour
     /// </summary>
     [Header("怪物的生命值"), Tooltip("生命值")]
     [Range(1, 12)]
-    public byte HP = 6;
+    public float HP = 6;
 
     /// <summary>
     /// 怪物的攻擊力
     /// </summary>
     [Header("怪物的攻擊力"), Tooltip("攻擊力")]
     [Range(1, 5)]
-    public byte force = 1;
+    public float force = 1;
 
     /// <summary>
     /// 怪物的攻擊速度
@@ -32,19 +31,20 @@ public class VoodooDollSetting : MonoBehaviour
     public float attackSpeed = 1f;
 
     /// <summary>
+    /// 小怪的攻擊時間間隔
+    /// </summary>
+    [Header("小怪的攻擊時間間隔"),Tooltip("小怪的攻擊時間間隔")]
+    [Range(1f,5f)]
+    public float attackTime = 5f;
+
+    /// <summary>
     /// 怪物的走路速度
     /// </summary>
     [Header("怪物的走路速度"), Tooltip("走路速度")]
     [Range(1.0f, 3.0f)]
     public float walkSpeed = 1.0f;
 
-    /// <summary>
-    /// 怪物的跑步加速度
-    /// </summary>
-    [Header("怪物的跑步加速度"), Tooltip("跑步加速度")]
-    [Range(1, 3)]
-    public byte runAccelerate;
-
+    #region 掉落物產生
     /// <summary>
     /// 產生掉落物
     /// </summary>
@@ -62,26 +62,17 @@ public class VoodooDollSetting : MonoBehaviour
     ///  [Header("掉落機率(分母)"),Range(0f,10f),Tooltip("掉落機率(分母)")]
     private float DropProbability = 10;
 
-    /// <summary>
-    /// 怪物的道具掉落
-    /// </summary>
-    [Header("是否會掉落道具"), Tooltip("是否會掉落道具")]
-    public bool 是否掉道具 = false;
+    #endregion  掉落物產生 結束
 
     #endregion 設定數值 結束
 
     #region 設定動畫腳本相關欄位
-    public Transform Monster;
 
     // public Animator MonsterAni;
 
-    private Player red;
-
-    public Transform redPos;
+    private Transform redPos;
 
     #endregion  設定動畫腳本相關欄位 結束
-
-
 
     #endregion 設定基礎欄位 結束
 
@@ -93,9 +84,17 @@ public class VoodooDollSetting : MonoBehaviour
     /// </summary>
     public virtual void Att()
     {
-        // MonsterAni.SetBool("Att", true);
-        gameObject.GetComponent<Animator>().SetBool("Att", true);
-        red.GetComponent<Player>().LR_Hurt(force);
+        attackTime -= Time.deltaTime;
+
+        if (Vector3.Distance(transform.position, redPos.position) <= 2f)
+        {
+            if (attackTime <= 0)
+            {
+                GameObject.Find("LR").GetComponent<Player>().LR_Hurt(force);
+                // GetComponent<Animator>().SetBool("Att", true);// 啟動攻擊動畫
+                attackTime = 5;
+            }
+        }
     }
 
     /// <summary>
@@ -104,12 +103,12 @@ public class VoodooDollSetting : MonoBehaviour
     protected virtual void Track()
     {
         // MonsterAni.SetFloat("Walk", 0.6f);                                          // 啟動怪物動畫(移動)
-        gameObject.GetComponent<Animator>().SetFloat("Walk", 0.6f);
+        base.gameObject.GetComponent<Animator>().SetFloat("Walk", 0.6f);
 
         // 怪物緩慢移動至玩家附近
-        Monster.position = Vector3.Lerp(Monster.position, redPos.position, Time.deltaTime * walkSpeed);                            
+        gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, redPos.position, Time.deltaTime * walkSpeed);                            
 
-        Monster.transform.LookAt(redPos);                                           // 怪物面向玩家
+        gameObject.transform.LookAt(redPos);                                           // 怪物面向玩家
     }
 
     /// <summary>
@@ -120,8 +119,7 @@ public class VoodooDollSetting : MonoBehaviour
     {
         HP -= Damage;                              // HP 受損
 
-        // MonsterAni.SetTrigger("Hurt");          // 觸發怪物動畫(受傷)
-        gameObject.GetComponent<Animator>().SetTrigger("Hurt");
+        base.gameObject.GetComponent<Animator>().SetTrigger("Hurt");
     }
 
 
@@ -134,10 +132,10 @@ public class VoodooDollSetting : MonoBehaviour
         if (HP <= 0)
         {
             // MonsterAni.SetTrigger("Dead");              // 觸發怪物動畫(死亡)
-            gameObject.GetComponent<Animator>().SetTrigger("Dead");
+            base.gameObject.GetComponent<Animator>().SetTrigger("Dead");
 
             GetComponent<Collider>().enabled = false;   // 怪物碰撞器關閉
-            Destroy(gameObject, 2);                     // 兩秒後刪除怪物
+            Destroy(base.gameObject, 2);                     // 兩秒後刪除怪物
 
             // GameObject.Find("MonsterCreaterGroup").GetComponent<MonsterCreater>().MonsterNum--; // 因為是預製物,所以只能使用這方法來讓小怪找到MonsterCreaterGroup
 
@@ -173,7 +171,7 @@ public class VoodooDollSetting : MonoBehaviour
             Track();
 
             // 如果距離小於 0.5f
-            if (Vector3.Distance(Monster.position, redPos.position) < 0.5f)
+            if (Vector3.Distance(gameObject.transform.position, redPos.position) < 0.5f)
             {
                 // 開始攻擊
                 Att();
@@ -185,12 +183,12 @@ public class VoodooDollSetting : MonoBehaviour
     {
         // 如果玩家離開怪物的Collider範圍,關閉攻擊模式,進入待機狀態
         //  MonsterAni.SetBool("Att", false);
-        gameObject.GetComponent<Animator>().SetBool("Att", false); ; 
+        base.gameObject.GetComponent<Animator>().SetBool("Att", false); ; 
 
     }
 
 
-    void Start()
+    void Awake()
     {
 
     }
