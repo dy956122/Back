@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/Story_01.unity
     guid: bf971f29be859f74399d4037d0d6fec3
   - enabled: 1
-    path: Assets/Scenes/Game/Game_test.unity
+    path: Assets/Scenes/Game/Game.unity
     guid: f41373029ca5b674cb4c5e20e43dc261
   - enabled: 1
     path: Assets/Scenes/GameOver/GameOver_Missing.unity

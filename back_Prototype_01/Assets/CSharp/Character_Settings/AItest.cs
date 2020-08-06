@@ -8,8 +8,6 @@ public class AItest : MonoBehaviour
 
     private float Att = 2;
 
-    // public GameObject LR;
-
     private float timer = 5;
 
     private Transform Target;
@@ -23,6 +21,7 @@ public class AItest : MonoBehaviour
         }
     }
 
+
     private void Attack()
     {
         timer -= Time.deltaTime;
@@ -31,7 +30,7 @@ public class AItest : MonoBehaviour
         {
             if (timer <= 0)
             {
-                GameObject.Find("LR").GetComponent<Player>().LR_Hurt(Att);
+                Target.GetComponent<Player>().LR_Hurt(Att);
                 // 啟動攻擊動畫
                 timer = 5;
             }
