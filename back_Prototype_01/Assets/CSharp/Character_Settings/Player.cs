@@ -293,7 +293,7 @@ public class Player : MonoBehaviour
     {
         if (_scriptHp <= 0)
         {
-            SceneManager.LoadScene("GameOver1");
+            SceneManager.LoadScene("gameover01");
         }
     }
 
