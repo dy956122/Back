@@ -341,7 +341,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1035.2, y: 150}
+  m_SizeDelta: {x: 1035.2, y: 262.7823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709723666
 MonoBehaviour:
@@ -358,11 +358,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d2f9aef4abcd09c4480343b9dc55b50a, type: 3}
+    m_Font: {fileID: 12800000, guid: 68741f7595b529243b1db23600e25d92, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -374,7 +375,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "\u6211\u600E\u9EBC\u5728\u9019\u88E1\u7761\u8457\u2026\r\n\u5F97\u8D95\u5FEB\u56DE\u5BB6\uFF0C\u4E0D\u8981\u8B93\u963F\u5B24\u64D4\u5FC3\u4E86"
+  m_Text: "\u6211\u600E\u9EBC\u5728\u9019\u88E1\u7761\u8457\u4E86\u2026\r\n\u5F97\u5FEB\u9EDE\u56DE\u5BB6\uFF0C\u4E0D\u8981\u8B93\u963F\u5B24\u64D4\u5FC3"
 --- !u!222 &709723667
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -820,6 +821,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -898,6 +900,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1455,7 +1458,6 @@ MonoBehaviour:
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
-  m_CameraOutput: 0
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -1467,6 +1469,7 @@ MonoBehaviour:
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
+  m_ClearDepth: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2

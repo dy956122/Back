@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,16 +29,24 @@ public class GameManager : MonoBehaviour
             settingSwith = !settingSwith;
             if (settingSwith)
             {
-                //Time.timeScale = 0f;
+                Time.timeScale = 0f;
                 SettingButton.SetActive(true);
             }
             else
             {
-                //Time.timeScale = 1.0f;
+                Time.timeScale = 1.0f;
                 SettingButton.SetActive(false);
             }
         }
     }
+
+
+    /*IEnumerator timestop()
+    {
+        yield return new WaitForSeconds();
+
+    }*/
+
 
     #endregion 介面視窗顯示專用
 
