@@ -41,7 +41,7 @@ public class SkullProp : MonoBehaviour
 
     private void OnTriggerEnter(Collider collect)
     {
-        /// 如果 接觸到玩家
+        // 如果 接觸到玩家
         if (collect.GetComponent<Rigidbody>().tag == "Player")
         {
             // 呼叫

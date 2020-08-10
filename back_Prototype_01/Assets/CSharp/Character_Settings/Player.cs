@@ -75,7 +75,10 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 產生 鐮刀特效的物件
     /// </summary>
-    // public GameObject sickleEffectObj;
+    public GameObject sickleEffectObj;
+
+    // 產生斬擊的位置
+    public Transform CreatePos;
 
     /// <summary>
     /// 施放技能,產生的線圈
@@ -179,11 +182,10 @@ public class Player : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("Att", true);  // 普通攻擊
             UseSkill(1);                                    // 扣除 1 點體力值
-
             // 如果 MP 值 小於等於 0,就暫時不能攻擊
             if (scriptMp <= 0f)
             {
-                
+
             }
         }
         else
@@ -241,7 +243,7 @@ public class Player : MonoBehaviour
     public void TimeCountAdd()
     {
         // 如果倒數計時小於等於0秒時
-        if(_skillTimer <= 0f)
+        if (_skillTimer <= 0f)
         {
             _skillTimer += 3f;                                          // 秒數直接加 3 秒
             skillTimerImage.fillAmount = _skillTimer / SkillTimer;
@@ -260,49 +262,53 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void CreateSlash()
+    {
+        Instantiate(sickleEffectObj, CreatePos.position, Quaternion.Euler(90,220,0));
+    }
+
     #endregion 基本操作 結束
 
     #region 呼叫各結局
     /// <summary>
-    /// 完美結局(小紅帽平安回到奶奶家)
+    /// 完美結局(小紅帽平安回到奶奶家),由奶奶呼叫
     /// </summary>
     private void HappyScequence()
     {
         if (_scriptHp == LR_HP)
         {
-            //SceneManager.LoadScene("NormalScequence");
+            SceneManager.LoadScene("win");
         }
     }
 
     /// <summary>
-    /// 一般結局(小紅帽變成狼人)
-    /// </summary>
-    private void NormalScequence()
-    {
-
-        if (_scriptHp < LR_HP)
-        {
-            SceneManager.LoadScene("NormalScequence");
-        }
-    }
-
-    /// <summary>
-    /// 小紅帽被小怪打倒(已銜接),最後由狼人那邊呼叫
+    /// 小紅帽被狼人劇情殺
     /// </summary>
     public void GameOver1()
     {
+         SceneManager.LoadScene("gameover01");
+    }
+
+    /// <summary>
+    /// 小紅帽被小怪擊倒,因為要別的場景呼叫
+    /// </summary>
+    public void GameOver2()
+    {
         if (_scriptHp <= 0)
         {
-            SceneManager.LoadScene("gameover01");
+            SceneManager.LoadScene("gameover02");
         }
     }
 
     /// <summary>
-    /// 小紅帽被大野狼給劇情殺,因為要別的場景呼叫,所以需要改成 public(等待susan的動畫)
+    /// 小紅帽被狼人傷害後,回到奶奶家,最後變成狼人,由奶奶家呼叫此方法
     /// </summary>
-    public void GameOver2()
+    public void GameOver3()
     {
-        SceneManager.LoadScene("GameOver2");
+        if (_scriptHp < LR_HP)
+        {
+            SceneManager.LoadScene("gameover03");
+        }
     }
 
     #endregion 呼叫各結局 結束
@@ -326,7 +332,7 @@ public class Player : MonoBehaviour
     {
         Move();
         LR_Attack();
-        GameOver1();    // 最後由狼人那邊呼叫,因此此段可以刪除
+        GameOver2();    // 最後由狼人那邊呼叫,因此此段可以刪除
         SkillFiller();
         TimeCountMinus();
     }
