@@ -264,7 +264,13 @@ public class Player : MonoBehaviour
 
     public void CreateSlash()
     {
-        Instantiate(sickleEffectObj, CreatePos.position, Quaternion.Euler(90,220,0));
+        // 產生暫存座標物件 
+        Transform temp = Instantiate(sickleEffectObj, CreatePos).transform;
+
+        temp.localPosition = Vector3.zero;          // 讓暫存物件座標位置歸零
+        temp.localEulerAngles = Vector3.zero;    // 讓暫存物件座標角度歸零
+
+        temp.SetParent(null);                            // 產生後的物件,使其誕生在原位置,不會因為玩家移動而有其他位移、旋轉
     }
 
     #endregion 基本操作 結束

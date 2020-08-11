@@ -30,11 +30,14 @@ public class AItest : MonoBehaviour
         {
             if (timer <= 0)
             {
+                
                 Target.GetComponent<Player>().LR_Hurt(Att);
                 // 啟動攻擊動畫
-                GetComponent<Animator>().SetBool("Att", true);
+                GetComponentInChildren<Animator>().SetBool("Att", true);
+                // GetComponent<Animator>().SetBool("Att", true);
                 timer = 5;
             }
+            // GetComponentInChildren<Animator>().SetBool("Att", false);
         }
 
     }
