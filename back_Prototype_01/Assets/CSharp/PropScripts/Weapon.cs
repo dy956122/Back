@@ -38,7 +38,10 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Rigidbody>().tag == "Voodoo")
+        print(other.gameObject.name);
+
+
+        if (other.name == "voodoo idle")
         {
             Voodoo.GetComponent<AItest>().Hurt(2);
         }

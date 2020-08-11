@@ -220,6 +220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u8B8A\u8EAB\u5149\u9EDE"
       objectReference: {fileID: 0}
+    - target: {fileID: 4088751399099010671, guid: c342f930636afe746bc4131d47213cae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4088751399112939279, guid: c342f930636afe746bc4131d47213cae,
         type: 3}
       propertyPath: moveWithTransform
