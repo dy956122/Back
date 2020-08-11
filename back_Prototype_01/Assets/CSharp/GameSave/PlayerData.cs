@@ -10,4 +10,6 @@ public struct PlayerData
     public float Hp;
     public float Mp;
     public float skilltime;
+
+
 }

@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     /// 聖骸數量累計
     /// </summary>
     [Header("聖骸數量累計"), Tooltip("聖骸數量累計")]
-    private int skullNum = 0;
+    public int skullNum = 0;
 
     /// <summary>
     /// 會被聖骸腳本呼叫的參數,因此聖骸的腳本裡面也需要一個 GM
