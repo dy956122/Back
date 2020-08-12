@@ -12,6 +12,28 @@ public class AItest : MonoBehaviour
 
     private Transform Target;
 
+    #region 掉落物產生
+    /// <summary>
+    /// 產生掉落物
+    /// </summary>
+    private GameObject dropThing;
+
+    /// <summary>
+    /// 掉落機率 (分子),開頭d為小寫
+    /// </summary>
+    [Header("掉落機率(分子)"), Range(0f, 10f), Tooltip("掉落機率(分子)")]
+    public float dropProbability;
+
+    /// <summary>
+    /// 掉落機率 (分母),開頭D為大寫
+    /// </summary>
+    ///  [Header("掉落機率(分母)"),Range(0f,10f),Tooltip("掉落機率(分母)")]
+    private float DropProbability = 10;
+
+    #endregion  掉落物產生 結束
+
+
+
     private void Track()
     {
         if (Vector3.Distance(transform.position, Target.position) <= 50f)
@@ -26,20 +48,21 @@ public class AItest : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        if (Vector3.Distance(transform.position, Target.position) <= 2f)
+        if (Vector3.Distance(transform.position, Target.position) <= 5f)
         {
             if (timer <= 0)
             {
-                
                 Target.GetComponent<Player>().LR_Hurt(Att);
                 // 啟動攻擊動畫
                 GetComponentInChildren<Animator>().SetBool("Att", true);
                 // GetComponent<Animator>().SetBool("Att", true);
                 timer = 5;
+                if (timer <= 4f)
+                {
+                    GetComponentInChildren<Animator>().SetBool("Att", false);
+                }
             }
-            // GetComponentInChildren<Animator>().SetBool("Att", false);
         }
-
     }
 
     public void Hurt(int damage)
@@ -47,7 +70,22 @@ public class AItest : MonoBehaviour
         HP -= damage;
         if (HP <= 0f)
         {
-            GameObject.Destroy(gameObject);
+            GetComponent<Animator>().SetTrigger("Die");
+            Destroy(gameObject,5);
+            PropDrop();
+        }
+    }
+
+    /// <summary>
+    /// 掉落道具
+    /// </summary>
+    private void PropDrop()
+    {
+        // 如果掉落機率 大於 0.3
+        if ((Random.Range(0, dropProbability) / DropProbability) > 0.3f)
+        {
+            // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)
+            Instantiate(dropThing, transform.position, Quaternion.identity);
         }
     }
 

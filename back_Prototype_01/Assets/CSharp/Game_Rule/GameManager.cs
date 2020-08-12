@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion  聖骸相關數值與方法 結束
-   
+
     private void Update()
     {
         SettingButtonControl();

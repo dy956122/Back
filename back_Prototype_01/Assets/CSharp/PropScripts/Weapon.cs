@@ -22,7 +22,7 @@ public class Weapon : MonoBehaviour
     private void Awake()
     {
         // Voodoo = GameObject.FindGameObjectWithTag("Voodoo").GetComponent<Rigidbody>();
-        //WolfMan = GameObject.Find("WolfMan").GetComponent<Rigidbody>();
+        // WolfMan = GameObject.Find("WolfMan").GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
@@ -39,7 +39,6 @@ public class Weapon : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print(other.gameObject.name);
-
 
         if (other.name == "voodoo idle")
         {
