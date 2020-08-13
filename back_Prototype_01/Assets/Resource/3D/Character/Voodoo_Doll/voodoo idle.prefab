@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropThing: {fileID: 2916522428762262183, guid: e275c95028daeb942a374fcc50df8ae6,
     type: 3}
-  dropProbability: 0
+  dropProbability: 10
 --- !u!54 &5599006102996597086
 Rigidbody:
   m_ObjectHideFlags: 0

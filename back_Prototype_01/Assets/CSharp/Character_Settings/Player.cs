@@ -199,7 +199,7 @@ public class Player : MonoBehaviour
         {
             // GetComponent<Animator>().SetBool("Skill", true); // 施放技能的動畫還沒有處理好
             TimeCountAdd();
-            Instantiate(SkillObj,transform.position,Quaternion.identity);
+            Instantiate(SkillObj, CreatePos.position,Quaternion.identity);
 
         }
     }

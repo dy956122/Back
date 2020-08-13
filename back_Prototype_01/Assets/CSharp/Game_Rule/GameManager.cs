@@ -159,13 +159,14 @@ public class GameManager : MonoBehaviour
 
         // 3. 取得要寫入資料的物件
         Transform target = GameObject.Find("LR").transform;
-        // Player player = GameObject.Find("Unity 醬").GetComponent<Player>();
+        Player player = GameObject.Find("LR").GetComponent<Player>();
         // Text textCoin = GameObject.Find("SkullNum").GetComponent<Text>();
 
         // 4. 讀取資料
         target.position = data.playerpos;
         target.eulerAngles = data.playerrot;
-        data.Skull = skullNum;
+        skullNum = data.Skull;
+        target.GetComponent<Player>().LR_HP = data.Hp;
         // textCoin.text = "聖骸數量：" + data.Skull;
     }
 
@@ -182,6 +183,8 @@ public class GameManager : MonoBehaviour
         data.playerpos = target.position;
         data.playerrot = target.eulerAngles;
         data.Skull = skullNum;
+        data.Hp = target.GetComponent<Player>().LR_HP;
+
 
         // 3. 轉為 JSON
         string json = JsonUtility.ToJson(data);

@@ -4,11 +4,13 @@ public class AItest : MonoBehaviour
 {
     // AI角色 試寫
 
-    private int HP = 2;
+    private int HP = 4;
 
     private float Att = 2;
 
     private float timer = 5;
+
+    private float speed = 2;
 
     private Transform Target;
 
@@ -16,7 +18,7 @@ public class AItest : MonoBehaviour
     /// <summary>
     /// 產生掉落物
     /// </summary>
-    private GameObject dropThing;
+    public GameObject dropThing;
 
     /// <summary>
     /// 掉落機率 (分子),開頭d為小寫
@@ -39,7 +41,7 @@ public class AItest : MonoBehaviour
         if (Vector3.Distance(transform.position, Target.position) <= 50f)
         {
             transform.LookAt(Target);
-            transform.position = Vector3.Lerp(gameObject.transform.position, Target.position, Time.deltaTime);
+            transform.position = Vector3.Lerp(gameObject.transform.position, Target.position, Time.deltaTime * speed);
         }
     }
 
@@ -70,8 +72,9 @@ public class AItest : MonoBehaviour
         HP -= damage;
         if (HP <= 0f)
         {
-            GetComponent<Animator>().SetTrigger("Die");
-            Destroy(gameObject,5);
+            transform.GetChild(0).GetComponent<Animator>().SetTrigger("Die");
+            speed = 0;
+            Destroy(gameObject,2);
             PropDrop();
         }
     }

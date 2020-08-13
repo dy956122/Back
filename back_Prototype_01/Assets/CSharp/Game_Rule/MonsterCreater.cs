@@ -28,7 +28,9 @@ public class MonsterCreater : MonoBehaviour
     /// </summary>
     private void CreateMonster()
     {
+        if (MonsterNum > 6) return;
         Instantiate(Voodoo, CreaterPonit[Random.Range(0, CreaterPonit.Length)].transform.position, Quaternion.identity);
+        MonsterNum++;
     }
 
     /// <summary>
@@ -36,17 +38,12 @@ public class MonsterCreater : MonoBehaviour
     /// </summary>
     private void timeforCreate()
     {
-        InvokeRepeating("CreateMonster", 5, 10);
-        MonsterNum++;
     }
 
 
-    void Update()
+    void Start()
     {
-        if (MonsterNum <= 6)
-        {
-            timeforCreate();
-        }
+        InvokeRepeating("CreateMonster", 5, 8f);
     }
 
 }

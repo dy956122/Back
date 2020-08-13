@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
@@ -16,15 +15,15 @@ public class SceneChange : MonoBehaviour
     /// </summary>
     string SaveAudioSlider = "SaveAudioSlider";
 
+    public void NextSceneDelay()
+    {
+        Invoke("NextScene", 2);
+    }
 
-
-
-    public void NextScene()
+   public void NextScene()
     {//選擇下一關
         PlayerPrefs.SetFloat(SaveAudioSlider, AudioListener.volume);
-        Application.LoadLevel(SceneName);
-
-
+        SceneManager.LoadScene(SceneName);
     } //選擇下一關 結束
 
 }

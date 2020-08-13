@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    // 開頭音樂控制
     #region 屬性與欄位設定
 
     [Header("遊戲開頭音樂"), Tooltip("遊戲開頭音樂")]

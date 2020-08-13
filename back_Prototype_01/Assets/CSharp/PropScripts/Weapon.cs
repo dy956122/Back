@@ -40,9 +40,9 @@ public class Weapon : MonoBehaviour
     {
         print(other.gameObject.name);
 
-        if (other.name == "voodoo idle")
+        if (other.tag == "Voodoo")
         {
-            Voodoo.GetComponent<AItest>().Hurt(2);
+            other.GetComponent<AItest>().Hurt(2);
         }
         /*else if (WolfMan.tag == "WolfMan")
         {
