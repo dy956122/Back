@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// 施放技能,產生的線圈
     /// </summary>
-    // public GameObject SkillObj;
+    public GameObject SkillObj;
 
     #region 技能倒數計時
 
@@ -199,7 +199,7 @@ public class Player : MonoBehaviour
         {
             // GetComponent<Animator>().SetBool("Skill", true); // 施放技能的動畫還沒有處理好
             TimeCountAdd();
-            // Instantiate(SkillObj,transform.position,Quaternion.identity);
+            Instantiate(SkillObj,transform.position,Quaternion.identity);
 
         }
     }

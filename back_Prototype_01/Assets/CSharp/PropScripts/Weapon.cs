@@ -21,7 +21,7 @@ public class Weapon : MonoBehaviour
 
     private void Awake()
     {
-        // Voodoo = GameObject.FindGameObjectWithTag("Voodoo").GetComponent<Rigidbody>();
+        Voodoo = GameObject.FindGameObjectWithTag("Voodoo").GetComponent<Rigidbody>();
         // WolfMan = GameObject.Find("WolfMan").GetComponent<Rigidbody>();
     }
 
