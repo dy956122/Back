@@ -4,21 +4,29 @@ public class AItest : MonoBehaviour
 {
     // AI角色 試寫
 
-    private int HP = 4;
+    public int HP = 4;
 
-    private float Att = 2;
+    public float Att = 2;
 
-    private float timer = 5;
+    public float timer = 5;
 
-    private float speed = 2;
+    public float speed = 2;
 
-    private Transform Target;
+    [Range(10f, 100f)]
+    public float trackRange;
+
+    [Range(2f, 10f)]
+    public float attackRange;
+
+    protected Transform Target;
+
+    protected Player LR;
 
     #region 掉落物產生
     /// <summary>
     /// 產生掉落物
     /// </summary>
-    public GameObject dropThing;
+    private GameObject dropThing;
 
     /// <summary>
     /// 掉落機率 (分子),開頭d為小寫
@@ -35,38 +43,43 @@ public class AItest : MonoBehaviour
     #endregion  掉落物產生 結束
 
 
-
-    private void Track()
+    // 使大野狼繼承追蹤腳本
+    protected virtual void Track()
     {
-        if (Vector3.Distance(transform.position, Target.position) <= 50f)
+        if (Vector3.Distance(transform.position, Target.position) <= trackRange)
         {
             transform.LookAt(Target);
             transform.position = Vector3.Lerp(gameObject.transform.position, Target.position, Time.deltaTime * speed);
         }
     }
 
-
-    private void Attack()
+    // 使大野狼繼承攻擊腳本
+    protected virtual void Attack()
     {
         timer -= Time.deltaTime;
-
-        if (Vector3.Distance(transform.position, Target.position) <= 5f)
+        if (Vector3.Distance(transform.position, Target.position) <= attackRange)
         {
             if (timer <= 0)
             {
-                Target.GetComponent<Player>().LR_Hurt(Att);
                 // 啟動攻擊動畫
                 GetComponentInChildren<Animator>().SetBool("Att", true);
+                // 呼叫玩家損血 功能
+                Target.GetComponent<Player>().LR_Hurt(Att);
+
                 // GetComponent<Animator>().SetBool("Att", true);
                 timer = 5;
-                if (timer <= 4f)
-                {
-                    GetComponentInChildren<Animator>().SetBool("Att", false);
-                }
+
+            }
+            else if (timer <= 5f)
+            {
+                GetComponentInChildren<Animator>().SetBool("Att", false);
             }
         }
+
+
     }
 
+    // 受傷腳本
     public void Hurt(int damage)
     {
         HP -= damage;
@@ -74,13 +87,22 @@ public class AItest : MonoBehaviour
         {
             transform.GetChild(0).GetComponent<Animator>().SetTrigger("Die");
             speed = 0;
-            Destroy(gameObject,2);
+            Destroy(gameObject, 2);
             PropDrop();
         }
     }
 
+    // 呼叫玩家身上的結束遊戲腳本
+    protected virtual void GameOver()
+    {
+        if (LR._scriptHp <= 0)
+        {
+            LR.GameOver2();
+        }
+    }
+
     /// <summary>
-    /// 掉落道具
+    /// 掉落道具,僅限於小怪使用(大野狼無法繼承此段程式碼)
     /// </summary>
     private void PropDrop()
     {
@@ -100,6 +122,8 @@ public class AItest : MonoBehaviour
     void Awake()
     {
         Target = GameObject.Find("LR").transform;
+        dropThing = GameObject.Find("skull");
+        LR = GameObject.Find("LR").GetComponent<Player>() ;
     }
 
     // Update is called once per frame
@@ -107,10 +131,12 @@ public class AItest : MonoBehaviour
     {
         Attack();
         Track();
+        GameOver();
     }
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
 
-    }
+    }*/
 }

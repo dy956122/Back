@@ -185,7 +185,7 @@ public class Player : MonoBehaviour
             // 如果 MP 值 小於等於 0,就暫時不能攻擊
             if (scriptMp <= 0f)
             {
-
+                
             }
         }
         else
@@ -338,7 +338,6 @@ public class Player : MonoBehaviour
     {
         Move();
         LR_Attack();
-        GameOver2();    // 最後由狼人那邊呼叫,因此此段可以刪除
         SkillFiller();
         TimeCountMinus();
     }

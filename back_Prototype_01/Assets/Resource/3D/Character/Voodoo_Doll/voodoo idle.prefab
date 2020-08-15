@@ -65,8 +65,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f0e932abc095743a993851fb931b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropThing: {fileID: 2916522428762262183, guid: e275c95028daeb942a374fcc50df8ae6,
-    type: 3}
+  HP: 4
+  Att: 2
+  timer: 5
+  speed: 2
+  trackRange: 60
+  attackRange: 2
   dropProbability: 10
 --- !u!54 &5599006102996597086
 Rigidbody:

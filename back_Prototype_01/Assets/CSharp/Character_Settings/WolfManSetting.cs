@@ -1,24 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
-using UnityEngine;
-
-public class WolfManSetting : VoodooDollSetting
+public class WolfManSetting : AItest
 {
-    void Track(GameObject player)
+    protected override void GameOver()
     {
-        
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        if (LR._scriptHp <= 0)
+        {
+            LR.GameOver1();
+        }
     }
 }
