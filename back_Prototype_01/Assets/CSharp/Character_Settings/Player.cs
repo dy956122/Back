@@ -43,8 +43,8 @@ public class Player : MonoBehaviour
     /// 小紅帽的走路速度
     /// </summary>
     [Header("小紅帽的走路速度"), Tooltip("走路速度")]
-    [Range(1.0f, 15.0f)]
-    public float walkSpeed = 1.0f;
+    [Range(1.0f, 30.0f)]
+    public float walkSpeed = 30.0f;
 
     [Header("小紅帽走路聲音"), Tooltip("小紅帽走路聲")]
     /// <summary>
@@ -277,7 +277,7 @@ public class Player : MonoBehaviour
 
     #region 呼叫各結局
     /// <summary>
-    /// 完美結局(小紅帽平安回到奶奶家),由奶奶呼叫
+    /// 完美結局(小紅帽平安回到奶奶家),由奶奶家呼叫
     /// </summary>
     private void HappyScequence()
     {
@@ -288,7 +288,7 @@ public class Player : MonoBehaviour
     }
 
     /// <summary>
-    /// 小紅帽被狼人劇情殺
+    /// 小紅帽被狼人劇情殺,或是被狼人打倒
     /// </summary>
     public void GameOver1()
     {

@@ -31,14 +31,14 @@ public class AItest : MonoBehaviour
     /// <summary>
     /// 掉落機率 (分子),開頭d為小寫
     /// </summary>
-    [Header("掉落機率(分子)"), Range(0f, 10f), Tooltip("掉落機率(分子)")]
+    /*[Header("掉落機率(分子)"), Range(0f, 10f), Tooltip("掉落機率(分子)")]
     public float dropProbability;
 
     /// <summary>
     /// 掉落機率 (分母),開頭D為大寫
     /// </summary>
     ///  [Header("掉落機率(分母)"),Range(0f,10f),Tooltip("掉落機率(分母)")]
-    private float DropProbability = 10;
+    private float DropProbability = 10;*/
 
     #endregion  掉落物產生 結束
 
@@ -75,8 +75,6 @@ public class AItest : MonoBehaviour
                 GetComponentInChildren<Animator>().SetBool("Att", false);
             }
         }
-
-
     }
 
     // 受傷腳本
@@ -86,9 +84,10 @@ public class AItest : MonoBehaviour
         if (HP <= 0f)
         {
             transform.GetChild(0).GetComponent<Animator>().SetTrigger("Die");
+
             speed = 0;
-            Destroy(gameObject, 2);
-            PropDrop();
+            Destroy(gameObject, 2.5f);
+            Invoke("PropDrop",2);
         }
     }
 
@@ -107,11 +106,11 @@ public class AItest : MonoBehaviour
     private void PropDrop()
     {
         // 如果掉落機率 大於 0.3
-        if ((Random.Range(0, dropProbability) / DropProbability) > 0.3f)
-        {
-            // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)
-            Instantiate(dropThing, transform.position, Quaternion.identity);
-        }
+        /*if ((Random.Range(0, dropProbability) / DropProbability) > 0.3f)
+        {*/
+        // 產生掉落物(掉落物由自己指定,在此遊戲為聖骸)
+        Instantiate(dropThing, transform.position, Quaternion.identity);
+        /* }*/
     }
 
 
@@ -123,7 +122,7 @@ public class AItest : MonoBehaviour
     {
         Target = GameObject.Find("LR").transform;
         dropThing = GameObject.Find("skull");
-        LR = GameObject.Find("LR").GetComponent<Player>() ;
+        LR = GameObject.Find("LR").GetComponent<Player>();
     }
 
     // Update is called once per frame
