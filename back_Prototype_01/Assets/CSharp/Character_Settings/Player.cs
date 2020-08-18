@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 // 小紅帽的滑鼠右鍵攻擊還要寫入bool 函數,來控制關閉
 
-
 public class Player : MonoBehaviour
 {
     #region 基礎欄位與屬性
@@ -43,8 +42,8 @@ public class Player : MonoBehaviour
     /// 小紅帽的走路速度
     /// </summary>
     [Header("小紅帽的走路速度"), Tooltip("走路速度")]
-    [Range(1.0f, 30.0f)]
-    public float walkSpeed = 30.0f;
+    [Range(1.0f, 40.0f)]
+    public float walkSpeed = 40.0f;
 
     [Header("小紅帽走路聲音"), Tooltip("小紅帽走路聲")]
     /// <summary>
@@ -84,6 +83,10 @@ public class Player : MonoBehaviour
     /// 施放技能,產生的線圈
     /// </summary>
     public GameObject SkillObj;
+
+    // public GameObject WalkSound;
+
+    public AudioSource walkSound1;
 
     #region 技能倒數計時
 
@@ -185,7 +188,7 @@ public class Player : MonoBehaviour
             // 如果 MP 值 小於等於 0,就暫時不能攻擊
             if (scriptMp <= 0f)
             {
-                
+
             }
         }
         else
@@ -199,7 +202,7 @@ public class Player : MonoBehaviour
         {
             // GetComponent<Animator>().SetBool("Skill", true); // 施放技能的動畫還沒有處理好
             TimeCountAdd();
-            Instantiate(SkillObj, CreatePos.position,Quaternion.identity);
+            Instantiate(SkillObj, CreatePos.position, Quaternion.identity);
 
         }
     }
@@ -273,13 +276,17 @@ public class Player : MonoBehaviour
         temp.SetParent(null);                            // 產生後的物件,使其誕生在原位置,不會因為玩家移動而有其他位移、旋轉
     }
 
+    public void WalkSound1()
+    {
+        walkSound1.Play();
+    }
     #endregion 基本操作 結束
 
     #region 呼叫各結局
     /// <summary>
     /// 完美結局(小紅帽平安回到奶奶家),由奶奶家呼叫
     /// </summary>
-    private void HappyScequence()
+    public void HappyScequence()
     {
         if (_scriptHp == LR_HP)
         {
@@ -292,7 +299,7 @@ public class Player : MonoBehaviour
     /// </summary>
     public void GameOver1()
     {
-         SceneManager.LoadScene("gameover01");
+        SceneManager.LoadScene("gameover01");
     }
 
     /// <summary>

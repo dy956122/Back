@@ -3,6 +3,10 @@
 // 教學關專用的腳本
 public class Teach : MonoBehaviour
 {
+    // 改成碰到碰撞器就關掉
+
+    public int buttonNum;
+
     /*
     [SerializeField]
     private GameObject[] teachButton, teachText;
@@ -31,6 +35,7 @@ public class Teach : MonoBehaviour
 
     public void VanishButton()
     {
+        buttonNum++;
 
     }
 

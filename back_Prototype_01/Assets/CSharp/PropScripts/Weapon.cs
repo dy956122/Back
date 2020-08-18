@@ -31,11 +31,6 @@ public class Weapon : MonoBehaviour
         Destroy(gameObject, 1f); 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         print(other.gameObject.name);
@@ -44,9 +39,9 @@ public class Weapon : MonoBehaviour
         {
             other.GetComponent<AItest>().Hurt(2);
         }
-        /*else if (WolfMan.tag == "WolfMan")
+        else if (other.tag == "WolfMan")
         {
-            WolfMan.GetComponent<AItest>().Hurt(0);
-        }*/
+            other.GetComponent<WolfManSetting>().Hurt(2);
+        }
     }
 }

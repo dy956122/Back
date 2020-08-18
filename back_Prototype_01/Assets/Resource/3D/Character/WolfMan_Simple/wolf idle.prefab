@@ -113,6 +113,36 @@ Transform:
   m_Father: {fileID: 2715303771088956492}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &66280781659427809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8111943994404170002}
+  m_Layer: 0
+  m_Name: CreatePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8111943994404170002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66280781659427809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.29, z: 2.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3017633719131332462}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &592701764180248881
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +480,7 @@ GameObject:
   - component: {fileID: 841767194043101730}
   m_Layer: 0
   m_Name: wolf idle
-  m_TagString: Untagged
+  m_TagString: WolfMan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,6 +499,7 @@ Transform:
   - {fileID: 2558259774103738591}
   - {fileID: 8880612483552277452}
   - {fileID: 1108239579}
+  - {fileID: 8111943994404170002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -539,6 +570,9 @@ MonoBehaviour:
   speed: 2
   trackRange: 80
   attackRange: 6
+  wolfScratch: {fileID: 8924179314464380021, guid: d0197706cee7a4942a8d17a4eb69ac5d,
+    type: 3}
+  CreatePos: {fileID: 8111943994404170002}
 --- !u!1 &2363975388338728159
 GameObject:
   m_ObjectHideFlags: 0

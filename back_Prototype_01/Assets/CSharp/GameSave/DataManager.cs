@@ -72,11 +72,11 @@ public class DataManager : MonoBehaviour
          // 3. 取得要寫入資料的物件
          Transform target = GameObject.Find("LR").transform;
          Player player = GameObject.Find("LR").GetComponent<Player>();
-        // Text textCoin = GameObject.Find("SkullNum").GetComponent<Text>();
+         //Text textCoin = GameObject.Find("SkullNum").GetComponent<Text>();
 
         // 4. 讀取資料
         target.position = data.playerpos;
-         target.eulerAngles = data.playerrot;
+        target.eulerAngles = data.playerrot;
          //player.Skull = data.Skull;
         // textCoin.text = "聖骸數量：" + data.Skull;
      }
