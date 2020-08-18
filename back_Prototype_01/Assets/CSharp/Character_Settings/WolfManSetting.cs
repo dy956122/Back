@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class WolfManSetting : AItest
@@ -6,6 +7,12 @@ public class WolfManSetting : AItest
     public GameObject wolfScratch;
 
     public Transform CreatePos;
+
+    //public Image wolfHPImage;
+
+    // public float wolfHP = 6;
+
+    // private float _scriptHP;
 
     protected override void GameOver()
     {
@@ -29,12 +36,35 @@ public class WolfManSetting : AItest
         }
     }
 
+    protected override void Attack()
+    {
+        timer -= Time.deltaTime;
+        if (Vector3.Distance(transform.position, Target.position) <= attackRange)
+        {
+            if (timer <= 0)
+            {
+                // 啟動攻擊動畫
+                GetComponent<Animator>().SetBool("Att", true);
+                // 呼叫玩家損血 功能
+                Target.GetComponent<Player>().LR_Hurt(Att);
+
+                // GetComponent<Animator>().SetBool("Att", true);
+                timer = 5;
+            }
+            else if (timer <= 5f)
+            {
+                GetComponent<Animator>().SetBool("Att", false);
+            }
+        }
+    }
+
+
     public void Hurt(int damage)
     {
         HP -= damage;
         if (HP <= 0f)
         {
-            transform.GetChild(0).GetComponent<Animator>().SetTrigger("Die");
+            GetComponent<Animator>().SetTrigger("Die");
 
             speed = 0;
             

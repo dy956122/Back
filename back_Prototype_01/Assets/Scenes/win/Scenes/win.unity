@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10100,6 +10101,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -19895,6 +19897,8 @@ GameObject:
   - component: {fileID: 1646820356}
   - component: {fileID: 1646820355}
   - component: {fileID: 1646820354}
+  - component: {fileID: 1646820359}
+  - component: {fileID: 1646820358}
   m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
@@ -19983,6 +19987,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1646820358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646820353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fca3afa95622a44b3220d347aa1d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: GameTitle
+--- !u!114 &1646820359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646820353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9c60cc0168246499b7d7b60684c28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: GameTitle
+  animationTime: 5.5
 --- !u!1 &1800880181
 GameObject:
   m_ObjectHideFlags: 0
